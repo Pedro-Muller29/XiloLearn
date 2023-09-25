@@ -10,7 +10,7 @@ import SpriteKit
 
 extension GameScene {
     func setupKeys() {
-        var cKey: SKShapeNode = SKShapeNode(
+        let cKey: SKShapeNode = SKShapeNode(
             rect: CGRect(
                 x: self.frame.minX + regraDe3ParaLargura(78),
                 y: (-self.frame.height/2 + regraDe3ParaAltura(28)),
