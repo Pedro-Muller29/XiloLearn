@@ -21,6 +21,42 @@ extension GameScene {
         cKey.zPosition = 50
         cKey.name = "nodeC"
         self.addChild(cKey)
+        
+        let dKey: SKShapeNode = SKShapeNode(
+            rect: CGRect(
+                x: self.frame.minX + regraDe3ParaLargura(78 + 85),
+                y: (-self.frame.height/2 + regraDe3ParaAltura(39)),
+                width: regraDe3ParaLargura(80),
+                height: regraDe3ParaAltura(404))
+            , cornerRadius: 8)
+        dKey.fillColor = .blue
+        dKey.zPosition = 50
+        dKey.name = "nodeD"
+        self.addChild(dKey)
+        
+        let eKey: SKShapeNode = SKShapeNode(
+            rect: CGRect(
+                x: self.frame.minX + regraDe3ParaLargura(248),
+                y: (-self.frame.height/2 + regraDe3ParaAltura(50)),
+                width: regraDe3ParaLargura(80),
+                height: regraDe3ParaAltura(382))
+            , cornerRadius: 8)
+        eKey.fillColor = .cyan
+        eKey.zPosition = 50
+        eKey.name = "nodeE"
+        self.addChild(eKey)
+        
+        let fKey: SKShapeNode = SKShapeNode(
+            rect: CGRect(
+                x: self.frame.minX + regraDe3ParaLargura(333),
+                y: (-self.frame.height/2 + regraDe3ParaAltura(61)),
+                width: regraDe3ParaLargura(80),
+                height: regraDe3ParaAltura(360))
+            , cornerRadius: 8)
+        fKey.fillColor = .green
+        fKey.zPosition = 50
+        fKey.name = "nodeF"
+        self.addChild(fKey)
     }
     
     // Isso foi criado pois usei uma largura de 1000 no figma na imagem para pegar as proporções, e o calculo dinâmico permite ajustar pra tamanhos diferentes de tela depois
