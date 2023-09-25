@@ -8,16 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */; };
-		F92FFE2C2AC21DB100F73E77 /* g.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE222AC21DB100F73E77 /* g.wav */; };
-		F92FFE2D2AC21DB100F73E77 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE232AC21DB100F73E77 /* b.wav */; };
-		F92FFE2E2AC21DB100F73E77 /* d1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE242AC21DB100F73E77 /* d1.wav */; };
-		F92FFE2F2AC21DB100F73E77 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE252AC21DB100F73E77 /* c.wav */; };
-		F92FFE302AC21DB100F73E77 /* f.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE262AC21DB100F73E77 /* f.wav */; };
-		F92FFE312AC21DB100F73E77 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE272AC21DB100F73E77 /* sweep.wav */; };
-		F92FFE322AC21DB100F73E77 /* e1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE282AC21DB100F73E77 /* e1.wav */; };
-		F92FFE332AC21DB100F73E77 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE292AC21DB100F73E77 /* a.wav */; };
-		F92FFE342AC21DB100F73E77 /* _readme_and_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE2A2AC21DB100F73E77 /* _readme_and_license.txt */; };
-		F92FFE352AC21DB100F73E77 /* c2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F92FFE2B2AC21DB100F73E77 /* c2.wav */; };
+		1CFB70D92AC22334005AE041 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D02AC22332005AE041 /* b.wav */; };
+		1CFB70DA2AC22334005AE041 /* e1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D12AC22333005AE041 /* e1.wav */; };
+		1CFB70DB2AC22334005AE041 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D22AC22333005AE041 /* a.wav */; };
+		1CFB70DC2AC22334005AE041 /* c2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D32AC22333005AE041 /* c2.wav */; };
+		1CFB70DD2AC22334005AE041 /* g.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D42AC22333005AE041 /* g.wav */; };
+		1CFB70DE2AC22334005AE041 /* f.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D52AC22333005AE041 /* f.wav */; };
+		1CFB70DF2AC22334005AE041 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D62AC22334005AE041 /* c.wav */; };
+		1CFB70E02AC22334005AE041 /* d1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D72AC22334005AE041 /* d1.wav */; };
+		1CFB70E12AC22334005AE041 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D82AC22334005AE041 /* sweep.wav */; };
 		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
@@ -35,16 +34,15 @@
 
 /* Begin PBXFileReference section */
 		1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTouchesBegan.swift; sourceTree = "<group>"; };
-		F92FFE222AC21DB100F73E77 /* g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = g.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/g.wav; sourceTree = "<group>"; };
-		F92FFE232AC21DB100F73E77 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = b.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/b.wav; sourceTree = "<group>"; };
-		F92FFE242AC21DB100F73E77 /* d1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = d1.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/d1.wav; sourceTree = "<group>"; };
-		F92FFE252AC21DB100F73E77 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = c.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/c.wav; sourceTree = "<group>"; };
-		F92FFE262AC21DB100F73E77 /* f.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = f.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/f.wav; sourceTree = "<group>"; };
-		F92FFE272AC21DB100F73E77 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sweep.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/sweep.wav; sourceTree = "<group>"; };
-		F92FFE282AC21DB100F73E77 /* e1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = e1.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/e1.wav; sourceTree = "<group>"; };
-		F92FFE292AC21DB100F73E77 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = a.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/a.wav; sourceTree = "<group>"; };
-		F92FFE2A2AC21DB100F73E77 /* _readme_and_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _readme_and_license.txt; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/_readme_and_license.txt; sourceTree = "<group>"; };
-		F92FFE2B2AC21DB100F73E77 /* c2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = c2.wav; path = ../../../../../../Downloads/14220__danmitch3ll__xylophone/c2.wav; sourceTree = "<group>"; };
+		1CFB70D02AC22332005AE041 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
+		1CFB70D12AC22333005AE041 /* e1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = e1.wav; sourceTree = "<group>"; };
+		1CFB70D22AC22333005AE041 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
+		1CFB70D32AC22333005AE041 /* c2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c2.wav; sourceTree = "<group>"; };
+		1CFB70D42AC22333005AE041 /* g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = g.wav; sourceTree = "<group>"; };
+		1CFB70D52AC22333005AE041 /* f.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = f.wav; sourceTree = "<group>"; };
+		1CFB70D62AC22334005AE041 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c.wav; sourceTree = "<group>"; };
+		1CFB70D72AC22334005AE041 /* d1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d1.wav; sourceTree = "<group>"; };
+		1CFB70D82AC22334005AE041 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sweep.wav; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -72,19 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F92FFE212AC21DA400F73E77 /* xiloSounds */ = {
+		1CFB70CF2AC22163005AE041 /* xiloSounds */ = {
 			isa = PBXGroup;
 			children = (
-				F92FFE2A2AC21DB100F73E77 /* _readme_and_license.txt */,
-				F92FFE292AC21DB100F73E77 /* a.wav */,
-				F92FFE232AC21DB100F73E77 /* b.wav */,
-				F92FFE252AC21DB100F73E77 /* c.wav */,
-				F92FFE2B2AC21DB100F73E77 /* c2.wav */,
-				F92FFE242AC21DB100F73E77 /* d1.wav */,
-				F92FFE282AC21DB100F73E77 /* e1.wav */,
-				F92FFE262AC21DB100F73E77 /* f.wav */,
-				F92FFE222AC21DB100F73E77 /* g.wav */,
-				F92FFE272AC21DB100F73E77 /* sweep.wav */,
+				1CFB70D22AC22333005AE041 /* a.wav */,
+				1CFB70D02AC22332005AE041 /* b.wav */,
+				1CFB70D62AC22334005AE041 /* c.wav */,
+				1CFB70D32AC22333005AE041 /* c2.wav */,
+				1CFB70D72AC22334005AE041 /* d1.wav */,
+				1CFB70D12AC22333005AE041 /* e1.wav */,
+				1CFB70D52AC22333005AE041 /* f.wav */,
+				1CFB70D42AC22333005AE041 /* g.wav */,
+				1CFB70D82AC22334005AE041 /* sweep.wav */,
 			);
 			path = xiloSounds;
 			sourceTree = "<group>";
@@ -108,8 +105,8 @@
 		F9D959C62AC204F0005E23E8 /* XiloLearn */ = {
 			isa = PBXGroup;
 			children = (
+				1CFB70CF2AC22163005AE041 /* xiloSounds */,
 				F9D959C72AC204F0005E23E8 /* AppDelegate.swift */,
-				F92FFE212AC21DA400F73E77 /* xiloSounds */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
 				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
 				F9D959CF2AC204F0005E23E8 /* GameViewController.swift */,
@@ -209,20 +206,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFB70E12AC22334005AE041 /* sweep.wav in Resources */,
+				1CFB70DF2AC22334005AE041 /* c.wav in Resources */,
+				1CFB70DA2AC22334005AE041 /* e1.wav in Resources */,
 				F9D959D32AC204F0005E23E8 /* Main.storyboard in Resources */,
-				F92FFE312AC21DB100F73E77 /* sweep.wav in Resources */,
-				F92FFE342AC21DB100F73E77 /* _readme_and_license.txt in Resources */,
-				F92FFE2E2AC21DB100F73E77 /* d1.wav in Resources */,
 				F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */,
-				F92FFE2C2AC21DB100F73E77 /* g.wav in Resources */,
-				F92FFE322AC21DB100F73E77 /* e1.wav in Resources */,
-				F92FFE332AC21DB100F73E77 /* a.wav in Resources */,
-				F92FFE2F2AC21DB100F73E77 /* c.wav in Resources */,
-				F92FFE2D2AC21DB100F73E77 /* b.wav in Resources */,
-				F92FFE302AC21DB100F73E77 /* f.wav in Resources */,
+				1CFB70DD2AC22334005AE041 /* g.wav in Resources */,
+				1CFB70D92AC22334005AE041 /* b.wav in Resources */,
 				F9D959D52AC204F1005E23E8 /* Assets.xcassets in Resources */,
+				1CFB70DB2AC22334005AE041 /* a.wav in Resources */,
 				F9D959D82AC204F1005E23E8 /* LaunchScreen.storyboard in Resources */,
-				F92FFE352AC21DB100F73E77 /* c2.wav in Resources */,
+				1CFB70DC2AC22334005AE041 /* c2.wav in Resources */,
+				1CFB70DE2AC22334005AE041 /* f.wav in Resources */,
+				1CFB70E02AC22334005AE041 /* d1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
