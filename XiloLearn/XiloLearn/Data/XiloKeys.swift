@@ -9,6 +9,5 @@ import Foundation
 
 ///
 enum XiloKeys: Int {
-   case D1, E1, F, G, A, B, C, C2
-    
+    case C, D1, E1, F, G, A, B, C2, D2, E2
 }
