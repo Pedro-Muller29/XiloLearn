@@ -14,6 +14,7 @@
 		F9D959D32AC204F0005E23E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D959D12AC204F0005E23E8 /* Main.storyboard */; };
 		F9D959D52AC204F1005E23E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D959D42AC204F1005E23E8 /* Assets.xcassets */; };
 		F9D959D82AC204F1005E23E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D959D62AC204F1005E23E8 /* LaunchScreen.storyboard */; };
+		F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F9D959D22AC204F0005E23E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9D959D42AC204F1005E23E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9D959D72AC204F1005E23E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSUpdate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,22 @@
 			children = (
 				F9D959C72AC204F0005E23E8 /* AppDelegate.swift */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
-				F9D959CD2AC204F0005E23E8 /* GameScene.swift */,
+				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
 				F9D959CF2AC204F0005E23E8 /* GameViewController.swift */,
 				F9D959D12AC204F0005E23E8 /* Main.storyboard */,
 				F9D959D42AC204F1005E23E8 /* Assets.xcassets */,
 				F9D959D62AC204F1005E23E8 /* LaunchScreen.storyboard */,
 			);
 			path = XiloLearn;
+			sourceTree = "<group>";
+		};
+		F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9D959CD2AC204F0005E23E8 /* GameScene.swift */,
+				F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */,
+			);
+			path = GameSceneExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */,
 				F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */,
+				F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */,
 				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +309,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +338,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

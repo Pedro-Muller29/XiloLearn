@@ -13,8 +13,4 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         // code here
     }
-    
-    override func update(_ currentTime: TimeInterval) {
-        // code here
-    }
 }
