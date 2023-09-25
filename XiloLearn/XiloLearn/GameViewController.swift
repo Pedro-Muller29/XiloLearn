@@ -69,6 +69,4 @@ class GameViewController: UIViewController {
             node.run(SKAction.playSoundFileNamed("sweep", waitForCompletion: true))
         }
     }
-    
-    
 }
