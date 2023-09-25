@@ -13,19 +13,15 @@ class GameScene: SKScene {
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
     
     var startButton: SKSpriteNode? = SKSpriteNode()
-    
     var gameIsOn: Bool = false
+    
+    var xiloKeys: [SKNode] = []
     
     override func didMove(to view: SKView) {
         // code here
         setupBackground()
         setupKeys()
-        
-        startButton = SKSpriteNode(texture: SKTexture(image: UIImage(systemName: "play.fill")!))
-        startButton?.size = CGSize(width: 60, height: 60)
-        startButton?.position = CGPoint(x: self.size.width/2 * 0.8, y: self.size.height/2 * 0.8)
-        startButton?.name = "startButton"
-        addChild(startButton!)
+        setupStartButton()
     }
     
     func startGame() {

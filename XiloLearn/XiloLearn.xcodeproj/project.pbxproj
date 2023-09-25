@@ -19,6 +19,7 @@
 		F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959E22AC207A0005E23E8 /* XiloKeys.swift */; };
 		F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */; };
 		F9D959E72AC20CE5005E23E8 /* GSSetupKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */; };
+		F9D959E92AC21836005E23E8 /* GSSetupStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959E82AC21836005E23E8 /* GSSetupStartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F9D959E22AC207A0005E23E8 /* XiloKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiloKeys.swift; sourceTree = "<group>"; };
 		F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupBackground.swift; sourceTree = "<group>"; };
 		F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupKeys.swift; sourceTree = "<group>"; };
+		F9D959E82AC21836005E23E8 /* GSSetupStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupStartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D959CD2AC204F0005E23E8 /* GameScene.swift */,
-				F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */,
-				F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */,
+				F9D959EB2AC21865005E23E8 /* Setups */,
 				F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */,
 				1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */,
 			);
@@ -97,6 +98,16 @@
 				F9D959E22AC207A0005E23E8 /* XiloKeys.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F9D959EB2AC21865005E23E8 /* Setups */ = {
+			isa = PBXGroup;
+			children = (
+				F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */,
+				F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */,
+				F9D959E82AC21836005E23E8 /* GSSetupStartButton.swift */,
+			);
+			path = Setups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				F9D959E72AC20CE5005E23E8 /* GSSetupKeys.swift in Sources */,
 				F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */,
 				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
+				F9D959E92AC21836005E23E8 /* GSSetupStartButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
