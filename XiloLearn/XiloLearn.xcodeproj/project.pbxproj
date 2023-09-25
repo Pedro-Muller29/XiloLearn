@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7493D6B2AC20B4E0053B629 /* c2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D622AC20B4E0053B629 /* c2.wav */; };
+		E7493D6C2AC20B4E0053B629 /* e1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D632AC20B4E0053B629 /* e1.wav */; };
+		E7493D6D2AC20B4E0053B629 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D642AC20B4E0053B629 /* b.wav */; };
+		E7493D6E2AC20B4E0053B629 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D652AC20B4E0053B629 /* c.wav */; };
+		E7493D6F2AC20B4E0053B629 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D662AC20B4E0053B629 /* a.wav */; };
+		E7493D702AC20B4E0053B629 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D672AC20B4E0053B629 /* sweep.wav */; };
+		E7493D712AC20B4E0053B629 /* d1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D682AC20B4E0053B629 /* d1.wav */; };
+		E7493D722AC20B4E0053B629 /* f.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D692AC20B4E0053B629 /* f.wav */; };
+		E7493D732AC20B4E0053B629 /* g.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7493D6A2AC20B4E0053B629 /* g.wav */; };
 		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
@@ -19,6 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7493D622AC20B4E0053B629 /* c2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = c2.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/c2.wav; sourceTree = "<group>"; };
+		E7493D632AC20B4E0053B629 /* e1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = e1.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/e1.wav; sourceTree = "<group>"; };
+		E7493D642AC20B4E0053B629 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = b.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/b.wav; sourceTree = "<group>"; };
+		E7493D652AC20B4E0053B629 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = c.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/c.wav; sourceTree = "<group>"; };
+		E7493D662AC20B4E0053B629 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = a.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/a.wav; sourceTree = "<group>"; };
+		E7493D672AC20B4E0053B629 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sweep.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/sweep.wav; sourceTree = "<group>"; };
+		E7493D682AC20B4E0053B629 /* d1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = d1.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/d1.wav; sourceTree = "<group>"; };
+		E7493D692AC20B4E0053B629 /* f.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = f.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/f.wav; sourceTree = "<group>"; };
+		E7493D6A2AC20B4E0053B629 /* g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = g.wav; path = ../../../../../Downloads/14220__danmitch3ll__xylophone/g.wav; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -42,6 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7493D612AC20B2C0053B629 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				E7493D662AC20B4E0053B629 /* a.wav */,
+				E7493D642AC20B4E0053B629 /* b.wav */,
+				E7493D652AC20B4E0053B629 /* c.wav */,
+				E7493D622AC20B4E0053B629 /* c2.wav */,
+				E7493D682AC20B4E0053B629 /* d1.wav */,
+				E7493D632AC20B4E0053B629 /* e1.wav */,
+				E7493D692AC20B4E0053B629 /* f.wav */,
+				E7493D6A2AC20B4E0053B629 /* g.wav */,
+				E7493D672AC20B4E0053B629 /* sweep.wav */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		F9D959BB2AC204F0005E23E8 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +95,7 @@
 		F9D959C62AC204F0005E23E8 /* XiloLearn */ = {
 			isa = PBXGroup;
 			children = (
+				E7493D612AC20B2C0053B629 /* Notes */,
 				F9D959C72AC204F0005E23E8 /* AppDelegate.swift */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
 				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
@@ -148,7 +183,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7493D6C2AC20B4E0053B629 /* e1.wav in Resources */,
+				E7493D702AC20B4E0053B629 /* sweep.wav in Resources */,
+				E7493D6D2AC20B4E0053B629 /* b.wav in Resources */,
+				E7493D722AC20B4E0053B629 /* f.wav in Resources */,
+				E7493D6B2AC20B4E0053B629 /* c2.wav in Resources */,
+				E7493D6F2AC20B4E0053B629 /* a.wav in Resources */,
 				F9D959D32AC204F0005E23E8 /* Main.storyboard in Resources */,
+				E7493D712AC20B4E0053B629 /* d1.wav in Resources */,
+				E7493D732AC20B4E0053B629 /* g.wav in Resources */,
+				E7493D6E2AC20B4E0053B629 /* c.wav in Resources */,
 				F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */,
 				F9D959D52AC204F1005E23E8 /* Assets.xcassets in Resources */,
 				F9D959D82AC204F1005E23E8 /* LaunchScreen.storyboard in Resources */,
