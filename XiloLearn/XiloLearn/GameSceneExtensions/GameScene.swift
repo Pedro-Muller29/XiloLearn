@@ -10,7 +10,13 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    var xiloBackground: SKSpriteNode? = SKSpriteNode()
+    
     override func didMove(to view: SKView) {
         // code here
+        xiloBackground = SKSpriteNode(imageNamed: "XilofoneFake")
+        xiloBackground?.size = CGSize(width: self.size.width, height: self.size.height)
+        xiloBackground?.position = .zero
+        addChild(xiloBackground!)
     }
 }
