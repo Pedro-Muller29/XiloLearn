@@ -10,6 +10,8 @@ import SpriteKit
 
 extension GameScene {
     
+    /// Toca o som da tecla específica e lida com as animações das teclas
+    #warning("Colocar as animações aqui depois")
     func playNode(node: SKNode){
         switch node.name {
         case "nodeA":
@@ -24,10 +26,10 @@ extension GameScene {
         case "nodeC2":
             node.run(SKAction.playSoundFileNamed("c2", waitForCompletion: true))
             
-        case "nodeD1":
+        case "nodeD":
             node.run(SKAction.playSoundFileNamed("d1", waitForCompletion: true))
       
-        case "nodeE1":
+        case "nodeE":
             node.run(SKAction.playSoundFileNamed("e1", waitForCompletion: true))
             
         case "nodeF":

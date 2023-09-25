@@ -10,15 +10,15 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
-    
+    var xiloKeys: [SKNode] = []
     var startButton: SKSpriteNode? = SKSpriteNode()
+    
+    // Variáveis de controle de estado
     var gameIsOn: Bool = false
     
-    var xiloKeys: [SKNode] = []
-    
     override func didMove(to view: SKView) {
-        // code here
         setupBackground()
         setupKeys()
         setupStartButton()
