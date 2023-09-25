@@ -18,11 +18,8 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         // code here
-        xiloBackground = SKSpriteNode(imageNamed: "XilofoneFake")
-        xiloBackground?.size = CGSize(width: self.size.width, height: self.size.height)
-        xiloBackground?.position = .zero
-        xiloBackground?.zPosition = -50
-        addChild(xiloBackground!)
+        setupBackground()
+        setupKeys()
         
         startButton = SKSpriteNode(texture: SKTexture(image: UIImage(systemName: "play.fill")!))
         startButton?.size = CGSize(width: 60, height: 60)
@@ -32,8 +29,6 @@ class GameScene: SKScene {
     }
     
     func startGame() {
-        
-        
-        
+
     }
 }
