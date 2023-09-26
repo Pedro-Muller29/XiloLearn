@@ -17,6 +17,7 @@
 		1CFB70DF2AC22334005AE041 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D62AC22334005AE041 /* c.wav */; };
 		1CFB70E02AC22334005AE041 /* d1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D72AC22334005AE041 /* d1.wav */; };
 		1CFB70E12AC22334005AE041 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D82AC22334005AE041 /* sweep.wav */; };
+		E7F2B2E82AC2FB1F0000E8F0 /* NotesReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B2E72AC2FB1F0000E8F0 /* NotesReference.swift */; };
 		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
@@ -43,6 +44,7 @@
 		1CFB70D62AC22334005AE041 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c.wav; sourceTree = "<group>"; };
 		1CFB70D72AC22334005AE041 /* d1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d1.wav; sourceTree = "<group>"; };
 		1CFB70D82AC22334005AE041 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sweep.wav; sourceTree = "<group>"; };
+		E7F2B2E72AC2FB1F0000E8F0 /* NotesReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesReference.swift; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				1CFB70D52AC22333005AE041 /* f.wav */,
 				1CFB70D42AC22333005AE041 /* g.wav */,
 				1CFB70D82AC22334005AE041 /* sweep.wav */,
+				E7F2B2E72AC2FB1F0000E8F0 /* NotesReference.swift */,
 			);
 			path = xiloSounds;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				F9D959ED2AC21CC0005E23E8 /* GSPlayNode.swift in Sources */,
 				F9D959E72AC20CE5005E23E8 /* GSSetupKeys.swift in Sources */,
 				F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */,
+				E7F2B2E82AC2FB1F0000E8F0 /* NotesReference.swift in Sources */,
 				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
 				F9D959E92AC21836005E23E8 /* GSSetupStartButton.swift in Sources */,
 			);
