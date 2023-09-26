@@ -19,9 +19,15 @@ extension GameScene {
             }
             
             // Checa se alguma das notas foi tocada e toca o som da nota.
-            for k in self.xiloKeys.values {
+            for k in self.xiloKeysToNode.values {
                 if k.contains(touch.location(in: self)) {
+                    // TODO: Check if is arcade or official mode
                     self.playNode(xilophoneKeyNode: k)
+                    if let simonAI = self.simonAI {
+                        let gotItRight: Bool = simonAI.validateInput(xiloKey: nodeToXiloKeys[k] ?? .A)
+                        print(gotItRight ? "Acertou a nota: \(nodeToXiloKeys[k]!)" : "Errou a nota")
+#warning("Quando tivermos uma animação validando se o cara acertou ou não, é aqui que fica")
+                    }
                     continue
                 }
             }
