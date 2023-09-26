@@ -41,7 +41,7 @@ extension GameScene {
             node.run(SKAction.playSoundFileNamed("g", waitForCompletion: true))
             
         default:
-            node.run(SKAction.playSoundFileNamed("sweep", waitForCompletion: true))
+            node.run(SKAction.wait(forDuration: 1))
         }
     }
     

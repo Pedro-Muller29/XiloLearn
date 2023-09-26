@@ -13,17 +13,12 @@ import Foundation
 class MockedSongs {
     /// ABC american song for kids: ABCDEFG, HIJKLMNOP, QRS, TUV, WX, Y AND Z
     static var ABCSong: [XiloKeys] =
-    [.C,.C,.G,.G,.A,.A,.G,
+    [.BREAK,
+     .C,.C,.G,.G,.A,.A,.G,
      .BREAK,
-     .F,.F,.E1,
+     .F,.F,.E1,.E1,.D1,.D1,.C,
      .BREAK,
-     .E1,
-     .BREAK,
-     .D1,.D1,.C,
-     .BREAK,
-     .G,.G,.F,
-     .BREAK,
-     .E1,.E1,.D1,
+     .G,.G,.F, .E1,.E1,.D1,
      .BREAK,
      .G,.G,.F,
      .BREAK,

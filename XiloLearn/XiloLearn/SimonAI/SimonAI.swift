@@ -12,7 +12,7 @@ import Combine
 class SimonAI {
     
     // MARK: Sliders
-    let timerInterval: TimeInterval = 1
+    let timerInterval: TimeInterval = 0.7
     
     // -------------
     

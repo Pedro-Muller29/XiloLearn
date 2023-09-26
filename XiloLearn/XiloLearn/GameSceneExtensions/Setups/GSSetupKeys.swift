@@ -61,6 +61,23 @@ extension GameScene {
         fKey.name = "nodeF"
         self.xiloKeys[.F] = fKey
         self.addChild(fKey)
+        
+        let gKey = SKNode()
+        gKey.name = "nodeG"
+        self.xiloKeys[.G] = gKey
+        self.addChild(gKey)
+        
+        let aKey = SKNode()
+        aKey.name = "nodeA"
+        self.xiloKeys[.A] = aKey
+        self.addChild(aKey)
+        
+        let bKey = SKNode()
+        bKey.name = "nodeB"
+        self.xiloKeys[.B] = bKey
+        self.addChild(bKey)
+        
+        
     }
     
     // Isso foi criado pois usei uma largura de 1000 no figma na imagem para pegar as proporções, e o calculo dinâmico permite ajustar pra tamanhos diferentes de tela depois
