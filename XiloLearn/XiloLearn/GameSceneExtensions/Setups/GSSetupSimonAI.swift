@@ -16,14 +16,13 @@ extension GameScene {
         guard let simonAI = self.simonAI else { print("Error: problems with simon setup") ; return }
         self.simonSubscription =
         simonAI
-            .pressingKeysSubscription
+            .playMusicSubscription
             .sink(receiveValue: { [weak self] xiloKey in
                 guard let self = self else {
                     print("self ja foi desinicializada")
                     return
                 }
-                self.playNode(xilophoneKeyNode: self.xiloKeys[xiloKey] ?? SKNode())
-                print("played node \(xiloKeys)")
+                self.playNode(xilophoneKeyNode: self.xiloKeysToNode[xiloKey] ?? SKNode())
             })
     }
 }

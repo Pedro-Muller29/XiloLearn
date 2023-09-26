@@ -13,7 +13,8 @@ class GameScene: SKScene {
     
     // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
-    var xiloKeys: [XiloKeys: SKNode] = [:]
+    var xiloKeysToNode: [XiloKeys: SKNode] = [:]
+    var nodeToXiloKeys: [SKNode: XiloKeys] = [:]
     var startButton: SKSpriteNode? = SKSpriteNode()
     
     // Variáveis de controle de estado
