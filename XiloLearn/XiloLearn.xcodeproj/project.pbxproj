@@ -18,6 +18,8 @@
 		1CFB70E02AC22334005AE041 /* d1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D72AC22334005AE041 /* d1.wav */; };
 		1CFB70E12AC22334005AE041 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D82AC22334005AE041 /* sweep.wav */; };
 		F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE362AC3134900F73E77 /* MockedSongs.swift */; };
+		F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */; };
+		F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */; };
 		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
@@ -45,6 +47,8 @@
 		1CFB70D72AC22334005AE041 /* d1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d1.wav; sourceTree = "<group>"; };
 		1CFB70D82AC22334005AE041 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sweep.wav; sourceTree = "<group>"; };
 		F92FFE362AC3134900F73E77 /* MockedSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSongs.swift; sourceTree = "<group>"; };
+		F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonAI.swift; sourceTree = "<group>"; };
+		F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupSimonAI.swift; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -88,6 +92,14 @@
 			path = xiloSounds;
 			sourceTree = "<group>";
 		};
+		F92FFE392AC3243800F73E77 /* SimonAI */ = {
+			isa = PBXGroup;
+			children = (
+				F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */,
+			);
+			path = SimonAI;
+			sourceTree = "<group>";
+		};
 		F9D959BB2AC204F0005E23E8 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
 				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
 				F9D959CF2AC204F0005E23E8 /* GameViewController.swift */,
+				F92FFE392AC3243800F73E77 /* SimonAI */,
 				F9D959E12AC20761005E23E8 /* Data */,
 				F9D959D12AC204F0005E23E8 /* Main.storyboard */,
 				F9D959D42AC204F1005E23E8 /* Assets.xcassets */,
@@ -144,6 +157,7 @@
 		F9D959EB2AC21865005E23E8 /* Setups */ = {
 			isa = PBXGroup;
 			children = (
+				F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */,
 				F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */,
 				F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */,
 				F9D959E82AC21836005E23E8 /* GSSetupStartButton.swift */,
@@ -232,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */,
 				F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */,
 				1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */,
+				F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */,
 				F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */,
 				F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */,
 				F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */,

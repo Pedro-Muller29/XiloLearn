@@ -19,7 +19,7 @@ extension GameScene {
             }
             
             // Checa se alguma das notas foi tocada e toca o som da nota.
-            for k in self.xiloKeys {
+            for k in self.xiloKeys.values {
                 if k.contains(touch.location(in: self)) {
                     self.playNode(xilophoneKeyNode: k)
                     continue

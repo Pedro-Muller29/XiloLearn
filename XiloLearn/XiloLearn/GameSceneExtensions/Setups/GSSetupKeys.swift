@@ -20,7 +20,7 @@ extension GameScene {
         cKey.fillColor = .yellow
         cKey.zPosition = 50
         cKey.name = "nodeC"
-        self.xiloKeys.append(cKey)
+        self.xiloKeys[.C] = cKey
         self.addChild(cKey)
         
         let dKey: SKShapeNode = SKShapeNode(
@@ -33,7 +33,7 @@ extension GameScene {
         dKey.fillColor = .blue
         dKey.zPosition = 50
         dKey.name = "nodeD"
-        self.xiloKeys.append(dKey)
+        self.xiloKeys[.D1] = dKey
         self.addChild(dKey)
         
         let eKey: SKShapeNode = SKShapeNode(
@@ -46,7 +46,7 @@ extension GameScene {
         eKey.fillColor = .cyan
         eKey.zPosition = 50
         eKey.name = "nodeE"
-        self.xiloKeys.append(eKey)
+        self.xiloKeys[.E1] = eKey
         self.addChild(eKey)
         
         let fKey: SKShapeNode = SKShapeNode(
@@ -59,7 +59,7 @@ extension GameScene {
         fKey.fillColor = .green
         fKey.zPosition = 50
         fKey.name = "nodeF"
-        self.xiloKeys.append(fKey)
+        self.xiloKeys[.F] = fKey
         self.addChild(fKey)
     }
     

@@ -7,21 +7,27 @@
 
 import SpriteKit
 import GameplayKit
+import Combine
 
 class GameScene: SKScene {
     
     // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
-    var xiloKeys: [SKNode] = []
+    var xiloKeys: [XiloKeys: SKNode] = [:]
     var startButton: SKSpriteNode? = SKSpriteNode()
     
     // Variáveis de controle de estado
     var gameIsOn: Bool = false
     
+    // Combine + SimonAI
+    var simonAI: SimonAI?
+    var simonSubscription: AnyCancellable?
+    
     override func didMove(to view: SKView) {
         setupBackground()
         setupKeys()
         setupStartButton()
+        setupSimonAI(with: MockedSongs.ABCSong)
     }
     
     func startGame() {
