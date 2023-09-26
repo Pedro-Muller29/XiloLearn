@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C963D702AC35AED00DA8CBD /* HapticsManager.swift */; };
 		1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */; };
 		1CFB70CE2AC21C06005AE041 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB70CD2AC21C06005AE041 /* MenuViewController.swift */; };
 		1CFB70D92AC22334005AE041 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D02AC22332005AE041 /* b.wav */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C963D702AC35AED00DA8CBD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HapticsManager.swift; path = ../HapticsManager.swift; sourceTree = "<group>"; };
 		1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTouchesBegan.swift; sourceTree = "<group>"; };
 		1CFB70CD2AC21C06005AE041 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1CFB70D02AC22332005AE041 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		F9D959C62AC204F0005E23E8 /* XiloLearn */ = {
 			isa = PBXGroup;
 			children = (
+				1C963D702AC35AED00DA8CBD /* HapticsManager.swift */,
 				1CFB70CF2AC22163005AE041 /* xiloSounds */,
 				F9D959C72AC204F0005E23E8 /* AppDelegate.swift */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
@@ -258,6 +261,7 @@
 				F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */,
 				F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */,
 				F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */,
+				1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */,
 				1CFB70CE2AC21C06005AE041 /* MenuViewController.swift in Sources */,
 				F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */,
 				F9D959ED2AC21CC0005E23E8 /* GSPlayNode.swift in Sources */,
@@ -413,7 +417,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2V5RBDFH46;
+				DEVELOPMENT_TEAM = V9T7U9428G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -441,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2V5RBDFH46;
+				DEVELOPMENT_TEAM = V9T7U9428G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

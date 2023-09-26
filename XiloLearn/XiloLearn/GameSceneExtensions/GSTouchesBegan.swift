@@ -7,6 +7,7 @@
 
 import Foundation
 import SpriteKit
+import CoreHaptics
 
 extension GameScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -22,6 +23,7 @@ extension GameScene {
             for k in self.xiloKeys.values {
                 if k.contains(touch.location(in: self)) {
                     self.playNode(xilophoneKeyNode: k)
+                    hapticManager.playHaptic(intensity: 10, sharpness: 10)
                     continue
                 }
             }
