@@ -7,33 +7,30 @@
 
 import SpriteKit
 import GameplayKit
+import Combine
 
 class GameScene: SKScene {
     
+    // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
-    
+    var xiloKeys: [XiloKeys: SKNode] = [:]
     var startButton: SKSpriteNode? = SKSpriteNode()
     
+    // Variáveis de controle de estado
     var gameIsOn: Bool = false
     
+    // Combine + SimonAI
+    var simonAI: SimonAI?
+    var simonSubscription: AnyCancellable?
+    
     override func didMove(to view: SKView) {
-        // code here
-        xiloBackground = SKSpriteNode(imageNamed: "XilofoneFake")
-        xiloBackground?.size = CGSize(width: self.size.width, height: self.size.height)
-        xiloBackground?.position = .zero
-        xiloBackground?.zPosition = -50
-        addChild(xiloBackground!)
-        
-        startButton = SKSpriteNode(texture: SKTexture(image: UIImage(systemName: "play.fill")!))
-        startButton?.size = CGSize(width: 60, height: 60)
-        startButton?.position = CGPoint(x: self.size.width/2 * 0.8, y: self.size.height/2 * 0.8)
-        startButton?.name = "startButton"
-        addChild(startButton!)
+        setupBackground()
+        setupKeys()
+        setupStartButton()
+        setupSimonAI(with: MockedSongs.ABCSong)
     }
     
     func startGame() {
-        
-        
-        
+
     }
 }
