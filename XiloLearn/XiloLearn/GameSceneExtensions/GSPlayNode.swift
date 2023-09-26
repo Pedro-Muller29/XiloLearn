@@ -10,9 +10,11 @@ import SpriteKit
 
 extension GameScene {
     
-    /// Toca o som da tecla específica e lida com as animações das teclas
-    #warning("Colocar as animações aqui depois")
-    func playNode(node: SKNode){
+    /// This function plays the sound of the xilophone key and animates it.
+    /// - Parameters:
+    ///     - xilophoneKeyNode: The node for the xilophone key hitbox.
+    func playNode(xilophoneKeyNode node: SKNode){
+        #warning("Colocar as animações aqui depois")
         switch node.name {
         case "nodeA":
             node.run(SKAction.playSoundFileNamed("a", waitForCompletion: true))

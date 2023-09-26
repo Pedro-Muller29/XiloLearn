@@ -17,6 +17,7 @@
 		1CFB70DF2AC22334005AE041 /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D62AC22334005AE041 /* c.wav */; };
 		1CFB70E02AC22334005AE041 /* d1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D72AC22334005AE041 /* d1.wav */; };
 		1CFB70E12AC22334005AE041 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D82AC22334005AE041 /* sweep.wav */; };
+		F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE362AC3134900F73E77 /* MockedSongs.swift */; };
 		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
@@ -43,6 +44,7 @@
 		1CFB70D62AC22334005AE041 /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c.wav; sourceTree = "<group>"; };
 		1CFB70D72AC22334005AE041 /* d1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d1.wav; sourceTree = "<group>"; };
 		1CFB70D82AC22334005AE041 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sweep.wav; sourceTree = "<group>"; };
+		F92FFE362AC3134900F73E77 /* MockedSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSongs.swift; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D959E22AC207A0005E23E8 /* XiloKeys.swift */,
+				F92FFE362AC3134900F73E77 /* MockedSongs.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */,
 				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
 				F9D959E92AC21836005E23E8 /* GSSetupStartButton.swift in Sources */,
+				F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

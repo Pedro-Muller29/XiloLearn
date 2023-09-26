@@ -15,14 +15,13 @@ extension GameScene {
             //  Verifica se o botão que pausa e despausa o jogo foi tocado
             if startButton!.contains(touch.location(in: self)) {
                 self.startButton?.texture = SKTexture(image: UIImage(systemName: gameIsOn ? "play.fill" : "pause.fill") ?? UIImage())
-                gameIsOn.toggle()
                 continue
             }
             
             // Checa se alguma das notas foi tocada e toca o som da nota.
             for k in self.xiloKeys {
                 if k.contains(touch.location(in: self)) {
-                    self.playNode(node: k)
+                    self.playNode(xilophoneKeyNode: k)
                     continue
                 }
             }
