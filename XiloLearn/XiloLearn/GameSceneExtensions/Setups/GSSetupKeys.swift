@@ -88,11 +88,11 @@ extension GameScene {
     }
     
     // Isso foi criado pois usei uma largura de 1000 no figma na imagem para pegar as proporções, e o calculo dinâmico permite ajustar pra tamanhos diferentes de tela depois
-    private func regraDe3ParaLargura(_ valor: CGFloat) -> CGFloat {
+    func regraDe3ParaLargura(_ valor: CGFloat) -> CGFloat {
         return valor * (self.size.width / 1000)
     }
     
-    private func regraDe3ParaAltura(_ valor: CGFloat) -> CGFloat {
+    func regraDe3ParaAltura(_ valor: CGFloat) -> CGFloat {
         return valor * (self.size.height / 562.5)
     }
 }

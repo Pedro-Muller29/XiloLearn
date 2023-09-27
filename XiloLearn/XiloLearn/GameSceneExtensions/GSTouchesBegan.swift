@@ -13,8 +13,14 @@ extension GameScene {
         for touch in touches {
             
             //  Verifica se o botão que pausa e despausa o jogo foi tocado
-            if startButton!.contains(touch.location(in: self)) {
-                self.startButton?.texture = SKTexture(image: UIImage(systemName: gameIsOn ? "play.fill" : "pause.fill") ?? UIImage())
+            if repeatButton!.contains(touch.location(in: self)) {
+                /// Aqui vai a função de repetir a música
+                
+                self.progress += 10
+                self.progressBar?.run(SKAction.resize(byWidth: 10, height: 0, duration: 0.5))
+                self.progressBar?.run(SKAction.resize(toWidth: regraDe3ParaLargura(375), duration: 1))
+                
+                print("repeat action")
                 continue
             }
             
@@ -23,7 +29,6 @@ extension GameScene {
                 if k.contains(touch.location(in: self)) {
                     // TODO: Check if is arcade or official mode
                     self.playNode(xilophoneKeyNode: k)
-                    self.hapticManager.playHaptic(intensity: 10, sharpness: 10)
 
                     // Validação do input
                     if let simonAI = self.simonAI {
