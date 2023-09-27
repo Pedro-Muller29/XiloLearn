@@ -14,9 +14,13 @@ class GameScene: SKScene {
     
     // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
-    var xiloKeysToNode: [XiloKeys: SKNode] = [:]
-    var nodeToXiloKeys: [SKNode: XiloKeys] = [:]
+    var xiloKeysToNode: [XiloKeys: SKShapeNode] = [:]
+    var nodeToXiloKeys: [SKShapeNode: XiloKeys] = [:]
     var repeatButton: SKSpriteNode? = SKSpriteNode()
+    var startButton: SKSpriteNode? = SKSpriteNode()
+    
+    // Score
+    var score: ScoreShower?
     
     // Variáveis de controle de estado
     var gameIsOn: Bool = false
@@ -37,8 +41,13 @@ class GameScene: SKScene {
         setupBackground()
         setupKeys()
         setupRepeatButton()
-        setupSimonAI(with: MockedSongs.ABCSong)
         setupProgressBar()
+        score = ScoreShower(scene: self)
+        animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
+            self.setupSimonAI(with: MockedSongs.ABCSong)
+        })
     }
     
     func startGame() {

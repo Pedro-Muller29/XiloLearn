@@ -25,6 +25,10 @@
 		F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */; };
 		F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */; };
 		F92FFE3F2AC3459E00F73E77 /* InputValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3E2AC3459E00F73E77 /* InputValidation.swift */; };
+		F92FFE432AC3B7D700F73E77 /* GSKeysAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE422AC3B7D700F73E77 /* GSKeysAnimations.swift */; };
+		F92FFE452AC45D3400F73E77 /* PauseAndPlaySimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE442AC45D3400F73E77 /* PauseAndPlaySimonAI.swift */; };
+		F9C3EB6C2AC4BE2800829513 /* GSSetupScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */; };
+		F9C3EB6F2AC4BE7A00829513 /* ScoreShower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB6E2AC4BE7A00829513 /* ScoreShower.swift */; };
 		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
@@ -59,6 +63,13 @@
 		F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonAI.swift; sourceTree = "<group>"; };
 		F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupSimonAI.swift; sourceTree = "<group>"; };
 		F92FFE3E2AC3459E00F73E77 /* InputValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidation.swift; sourceTree = "<group>"; };
+		F92FFE422AC3B7D700F73E77 /* GSKeysAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSKeysAnimations.swift; sourceTree = "<group>"; };
+		F92FFE442AC45D3400F73E77 /* PauseAndPlaySimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseAndPlaySimonAI.swift; sourceTree = "<group>"; };
+		F92FFE462AC4B00200F73E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F92FFE482AC4B3D600F73E77 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		F92FFE492AC4B3D600F73E77 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
+		F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupScoreLabel.swift; sourceTree = "<group>"; };
+		F9C3EB6E2AC4BE7A00829513 /* ScoreShower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShower.swift; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -121,6 +132,23 @@
 			path = SimonAI;
 			sourceTree = "<group>";
 		};
+		F92FFE472AC4B3C400F73E77 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F92FFE492AC4B3D600F73E77 /* SF-Pro-Italic.ttf */,
+				F92FFE482AC4B3D600F73E77 /* SF-Pro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F9C3EB6D2AC4BE6A00829513 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F9C3EB6E2AC4BE7A00829513 /* ScoreShower.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F9D959BB2AC204F0005E23E8 = {
 			isa = PBXGroup;
 			children = (
@@ -140,12 +168,15 @@
 		F9D959C62AC204F0005E23E8 /* XiloLearn */ = {
 			isa = PBXGroup;
 			children = (
+				F92FFE462AC4B00200F73E77 /* Info.plist */,
 				1CFD95882AC3FECD00D62912 /* Managers */,
 				1CFB70CF2AC22163005AE041 /* xiloSounds */,
 				F9D959C72AC204F0005E23E8 /* AppDelegate.swift */,
+				F92FFE472AC4B3C400F73E77 /* Fonts */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
 				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
 				F9D959CF2AC204F0005E23E8 /* GameViewController.swift */,
+				F9C3EB6D2AC4BE6A00829513 /* Classes */,
 				F92FFE392AC3243800F73E77 /* SimonAI */,
 				F9D959E12AC20761005E23E8 /* Data */,
 				F9D959D12AC204F0005E23E8 /* Main.storyboard */,
@@ -161,8 +192,10 @@
 				F9D959CD2AC204F0005E23E8 /* GameScene.swift */,
 				F9D959EB2AC21865005E23E8 /* Setups */,
 				F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */,
+				F92FFE422AC3B7D700F73E77 /* GSKeysAnimations.swift */,
 				1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */,
 				F9D959EC2AC21CC0005E23E8 /* GSPlayNode.swift */,
+				F92FFE442AC45D3400F73E77 /* PauseAndPlaySimonAI.swift */,
 			);
 			path = GameSceneExtensions;
 			sourceTree = "<group>";
@@ -184,6 +217,8 @@
 				F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */,
 				F9D959E82AC21836005E23E8 /* GSSetupRepeatButton.swift */,
 				1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */,
+				F9D959E82AC21836005E23E8 /* GSSetupStartButton.swift */,
+				F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */,
 			);
 			path = Setups;
 			sourceTree = "<group>";
@@ -271,6 +306,7 @@
 			files = (
 				1C68F12F2AC4A02000681DB7 /* GSSetupProgressBar.swift in Sources */,
 				F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */,
+				F92FFE452AC45D3400F73E77 /* PauseAndPlaySimonAI.swift in Sources */,
 				F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */,
 				1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */,
 				1CFD95852AC3655000D62912 /* AudioManager.swift in Sources */,
@@ -280,12 +316,16 @@
 				1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */,
 				F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */,
 				F9D959ED2AC21CC0005E23E8 /* GSPlayNode.swift in Sources */,
+				F9C3EB6F2AC4BE7A00829513 /* ScoreShower.swift in Sources */,
 				F9D959E72AC20CE5005E23E8 /* GSSetupKeys.swift in Sources */,
 				F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */,
+				F9C3EB6C2AC4BE2800829513 /* GSSetupScoreLabel.swift in Sources */,
 				F92FFE3F2AC3459E00F73E77 /* InputValidation.swift in Sources */,
 				E7F2B2E82AC2FB1F0000E8F0 /* NotesReference.swift in Sources */,
 				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
 				F9D959E92AC21836005E23E8 /* GSSetupRepeatButton.swift in Sources */,
+				F92FFE432AC3B7D700F73E77 /* GSKeysAnimations.swift in Sources */,
+				F9D959E92AC21836005E23E8 /* GSSetupStartButton.swift in Sources */,
 				F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,11 +471,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V9T7U9428G;
+				DEVELOPMENT_TEAM = 2V5RBDFH46;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_FILE = XiloLearn/Info.plist;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -448,6 +489,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pedro-Muller29.XiloLearn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,11 +501,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V9T7U9428G;
+				DEVELOPMENT_TEAM = 2V5RBDFH46;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_FILE = XiloLearn/Info.plist;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -476,6 +519,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pedro-Muller29.XiloLearn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

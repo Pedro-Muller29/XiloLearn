@@ -8,6 +8,6 @@
 import Foundation
 
 ///
-enum XiloKeys: Int {
+enum XiloKeys: Int, CaseIterable {
     case C, D1, E1, F, G, A, B, C2, D2, E2, BREAK
 }
