@@ -33,7 +33,7 @@ class GameScene: SKScene {
         setupKeys()
         setupStartButton()
 //        setupSimonAI(with: MockedSongs.ABCSong)
-//        animateXiloKeys(withDuration: 1)
+        animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
     }
     
     func startGame() {

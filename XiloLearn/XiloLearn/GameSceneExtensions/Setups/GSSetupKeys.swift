@@ -40,13 +40,14 @@ extension GameScene {
 //        cKeyWhiteBall.position = CGPoint(x: 0, y: -alturaMenu + regraDe3ParaAltura(110))
 //        cKey.addChild(cKeyWhiteBall)
         
-        let doLabel: SKLabelNode = SKLabelNode(text: "Dó")
+        let doLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Dó", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+            .foregroundColor: UIColor.white]))
         doLabel.zPosition = 100
         doLabel.fontColor = .white
-        doLabel.fontSize = 50
         doLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let cLabel: SKLabelNode = SKLabelNode(text: "C")
+        let cLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "C", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+            .foregroundColor: UIColor.white]))
         cLabel.zPosition = 100
         cLabel.fontColor = .white
         cLabel.fontSize = 30
@@ -78,13 +79,15 @@ extension GameScene {
 //        dKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 1), y: alturaMenu)
 //        dKey.addChild(dKeyWhiteBall)
         
-        let reLabel: SKLabelNode = SKLabelNode(text: "Ré")
+        let reLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Ré", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+            .foregroundColor: UIColor.white]))
         reLabel.zPosition = 100
         reLabel.fontColor = .white
         reLabel.fontSize = 50
         reLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let dLabel: SKLabelNode = SKLabelNode(text: "D")
+        let dLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "D", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+             .foregroundColor: UIColor.white]))
         dLabel.zPosition = 100
         dLabel.fontColor = .white
         dLabel.fontSize = 30
@@ -116,13 +119,15 @@ extension GameScene {
 //        eKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 2), y: alturaMenu)
 //        eKey.addChild(eKeyWhiteBall)
         
-        let miLabel: SKLabelNode = SKLabelNode(text: "Mi")
+        let miLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Mi", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+            .foregroundColor: UIColor.white]))
         miLabel.zPosition = 100
         miLabel.fontColor = .white
         miLabel.fontSize = 50
         miLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let eLabel: SKLabelNode = SKLabelNode(text: "E")
+        let eLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "E", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+            .foregroundColor: UIColor.white]))
         eLabel.zPosition = 100
         eLabel.fontColor = .white
         eLabel.fontSize = 30
@@ -146,13 +151,15 @@ extension GameScene {
         self.nodeToXiloKeys[fKey] = .F
         self.addChild(fKey)
         
-        let faLabel: SKLabelNode = SKLabelNode(text: "Fá")
+        let faLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Fá", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+            .foregroundColor: UIColor.white]))
         faLabel.zPosition = 100
         faLabel.fontColor = .white
         faLabel.fontSize = 50
         faLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let fLabel: SKLabelNode = SKLabelNode(text: "F")
+        let fLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "F", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+             .foregroundColor: UIColor.white]))
         fLabel.zPosition = 100
         fLabel.fontColor = .white
         fLabel.fontSize = 30
@@ -191,13 +198,15 @@ extension GameScene {
 //        gKeyWhiteBall.position = CGPoint(x: 0, y: altura)
 //        gKey.addChild(gKeyWhiteBall)
         
-        let solLabel: SKLabelNode = SKLabelNode(text: "Sol")
+        let solLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Sol", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+             .foregroundColor: UIColor.white]))
         solLabel.zPosition = 100
         solLabel.fontColor = .white
         solLabel.fontSize = 50
         solLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let gLabel: SKLabelNode = SKLabelNode(text: "G")
+        let gLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "G", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+            .foregroundColor: UIColor.white]))
         gLabel.zPosition = 100
         gLabel.fontColor = .white
         gLabel.fontSize = 30
@@ -229,13 +238,15 @@ extension GameScene {
 //        aKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 5), y: alturaMenu)
 //        aKey.addChild(aKeyWhiteBall)
         
-        let laLabel: SKLabelNode = SKLabelNode(text: "Lá")
+        let laLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "La", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+            .foregroundColor: UIColor.white]))
         laLabel.zPosition = 100
         laLabel.fontColor = .white
         laLabel.fontSize = 50
         laLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let aLabel: SKLabelNode = SKLabelNode(text: "A")
+        let aLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "A", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+             .foregroundColor: UIColor.white]))
         aLabel.zPosition = 100
         aLabel.fontColor = .white
         aLabel.fontSize = 30
@@ -267,13 +278,15 @@ extension GameScene {
 //        bKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 6), y: alturaMenu)
 //        bKey.addChild(bKeyWhiteBall)
         
-        let siLabel: SKLabelNode = SKLabelNode(text: "Si")
+        let siLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Si", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+            .foregroundColor: UIColor.white]))
         siLabel.zPosition = 100
         siLabel.fontColor = .white
         siLabel.fontSize = 50
         siLabel.position = CGPoint(x: 0, y: alturaNotas)
         
-        let bLabel: SKLabelNode = SKLabelNode(text: "B")
+        let bLabel: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "B", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+             .foregroundColor: UIColor.white]))
         bLabel.zPosition = 100
         bLabel.fontColor = .white
         bLabel.fontSize = 30
@@ -305,13 +318,15 @@ extension GameScene {
 //        c2KeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 7), y: alturaMenu)
 //        c2Key.addChild(c2KeyWhiteBall)
         
-        let do2Label: SKLabelNode = SKLabelNode(text: "Dó")
+        let do2Label: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "Dó", attributes: [.font: UIFont.boldSystemFont(ofSize: regraDe3ParaAltura(40)),
+             .foregroundColor: UIColor.white]))
         do2Label.zPosition = 100
         do2Label.fontColor = .white
         do2Label.fontSize = 50
         do2Label.position = CGPoint(x: 0, y: alturaNotas)
         
-        let c2Label: SKLabelNode = SKLabelNode(text: "C")
+        let c2Label: SKLabelNode = SKLabelNode(attributedText: NSAttributedString(string: "C", attributes: [.font: UIFont.systemFont(ofSize: regraDe3ParaAltura(30)),
+             .foregroundColor: UIColor.white]))
         c2Label.zPosition = 100
         c2Label.fontColor = .white
         c2Label.fontSize = 30
