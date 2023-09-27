@@ -8,30 +8,55 @@
 import Foundation
 import Combine
 
-/// Used for the SimonAI in the game
+/// Used for the SimonAI in the game. Is responsible for producing the sounds in the correct order, and validating user input order
 class SimonAI {
     
-    // MARK: Sliders
-    let timerInterval: TimeInterval = 0.7
-    
+    // MARK: Change UX
+    let timerInterval: TimeInterval
+    var increasePerCycle: Int
     // -------------
     
     // The music that will be playing
-    private var combinationToPlay: [XiloKeys]
+    internal var combinationToPlay: [XiloKeys]
     
     // Combine subscriptions
-    let pressingKeysSubscription: AnyPublisher<XiloKeys, Never>
+    var playMusicSubscription: AnyPublisher<XiloKeys, Never>
+    private var musicsSubject: CurrentValueSubject<[XiloKeys], Never>
     
-    init(combinationToPlay: [XiloKeys]) {
+    // Current note representens the idx for current note
+    var currentIndex: Int = 0
+    
+    // Current level indicates how many increasePerCycle have been done
+    var currentLevel: Int = 1{
+        // Updates the current sequence being presented based on this new level
+        didSet {
+            self.play(combinationToPlay: Array(combinationToPlay[0..<(currentLevel * increasePerCycle) + 1]))
+            self.currentIndex = 0
+        }
+    }
+    
+    init(combinationToPlay: [XiloKeys], increasePerCycle: Int = 1, timerInterval: TimeInterval = 0.7) {
         self.combinationToPlay = combinationToPlay
+        self.increasePerCycle = increasePerCycle
+        self.timerInterval = timerInterval
         
-        self.pressingKeysSubscription =
-        Timer.publish(every: timerInterval, on: .current, in: .default)
-            .autoconnect()
-            .zip(combinationToPlay.publisher)
-            .map({ _, xiloKey in
-                return xiloKey
-            })
+        // publisher responsável por enviar arrays para o publisher "playMusicSubscription"
+        self.musicsSubject = .init(Array(combinationToPlay[0..<(increasePerCycle) + 1]))
+        
+        // Esse publisher é responsável por enviar uma tecla a cada "timerInterval"
+        self.playMusicSubscription = musicsSubject
+            .flatMap { music -> AnyPublisher<XiloKeys, Never> in
+                Timer.publish(every: timerInterval, on: .current, in: .default)
+                    .autoconnect()
+                    .zip(music.publisher)
+                    .map { $1 }
+                    .eraseToAnyPublisher()
+            }
             .eraseToAnyPublisher()
+    }
+    
+    /// Usada para passar uma nova música para a AI
+    private func play(combinationToPlay: [XiloKeys]) {
+        musicsSubject.send(combinationToPlay)
     }
 }

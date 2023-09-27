@@ -20,7 +20,8 @@ extension GameScene {
         cKey.fillColor = .yellow
         cKey.zPosition = 50
         cKey.name = "nodeC"
-        self.xiloKeys[.C] = cKey
+        self.xiloKeysToNode[.C] = cKey
+        self.nodeToXiloKeys[cKey] = .C
         self.addChild(cKey)
         
         let dKey: SKShapeNode = SKShapeNode(
@@ -33,7 +34,8 @@ extension GameScene {
         dKey.fillColor = .blue
         dKey.zPosition = 50
         dKey.name = "nodeD"
-        self.xiloKeys[.D1] = dKey
+        self.xiloKeysToNode[.D1] = dKey
+        self.nodeToXiloKeys[dKey] = .D1
         self.addChild(dKey)
         
         let eKey: SKShapeNode = SKShapeNode(
@@ -46,7 +48,8 @@ extension GameScene {
         eKey.fillColor = .cyan
         eKey.zPosition = 50
         eKey.name = "nodeE"
-        self.xiloKeys[.E1] = eKey
+        self.xiloKeysToNode[.E1] = eKey
+        self.nodeToXiloKeys[eKey] = .E1
         self.addChild(eKey)
         
         let fKey: SKShapeNode = SKShapeNode(
@@ -59,25 +62,29 @@ extension GameScene {
         fKey.fillColor = .green
         fKey.zPosition = 50
         fKey.name = "nodeF"
-        self.xiloKeys[.F] = fKey
+        self.xiloKeysToNode[.F] = fKey
+        self.nodeToXiloKeys[fKey] = .F
         self.addChild(fKey)
+        
+        // MARK: NO IMAGES YET FOR THIS NODES
         
         let gKey = SKNode()
         gKey.name = "nodeG"
-        self.xiloKeys[.G] = gKey
+        self.xiloKeysToNode[.G] = gKey
+        self.nodeToXiloKeys[gKey] = .G
         self.addChild(gKey)
         
         let aKey = SKNode()
         aKey.name = "nodeA"
-        self.xiloKeys[.A] = aKey
+        self.xiloKeysToNode[.A] = aKey
+        self.nodeToXiloKeys[aKey] = .A
         self.addChild(aKey)
         
         let bKey = SKNode()
         bKey.name = "nodeB"
-        self.xiloKeys[.B] = bKey
+        self.xiloKeysToNode[.B] = bKey
+        self.nodeToXiloKeys[bKey] = .B
         self.addChild(bKey)
-        
-        
     }
     
     // Isso foi criado pois usei uma largura de 1000 no figma na imagem para pegar as proporções, e o calculo dinâmico permite ajustar pra tamanhos diferentes de tela depois
