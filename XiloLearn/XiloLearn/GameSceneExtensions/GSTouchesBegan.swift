@@ -33,8 +33,11 @@ extension GameScene {
                 self.hapticManager.playHaptic(intensity: 10, sharpness: 10)
                 if let simonAI = self.simonAI {
                     let gotItRight: Bool = simonAI.validateInput(xiloKey: nodeToXiloKeys[k] ?? .A)
-                    print(gotItRight ? "Acertou a nota: \(nodeToXiloKeys[k]!)" : "Errou a nota")
-#warning("Quando tivermos uma animação validando se o cara acertou ou não, é aqui que fica")
+                    if gotItRight {
+                        score?.updateScore(by: 1)
+                    } else {
+                        score?.updateScore(by: -1)
+                    }
                 }
                 return true
             }

@@ -18,6 +18,9 @@ class GameScene: SKScene {
     var nodeToXiloKeys: [SKShapeNode: XiloKeys] = [:]
     var startButton: SKSpriteNode? = SKSpriteNode()
     
+    // Score
+    var score: ScoreShower?
+    
     // Variáveis de controle de estado
     var gameIsOn: Bool = false
     
@@ -32,8 +35,12 @@ class GameScene: SKScene {
         setupBackground()
         setupKeys()
         setupStartButton()
-//        setupSimonAI(with: MockedSongs.ABCSong)
-        animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
+        animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
+            self.setupSimonAI(with: MockedSongs.ABCSong)
+        })
+        score = ScoreShower(scene: self)
     }
     
     func startGame() {

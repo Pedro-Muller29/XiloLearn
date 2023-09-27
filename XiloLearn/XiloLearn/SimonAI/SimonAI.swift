@@ -53,8 +53,6 @@ class SimonAI {
                     .eraseToAnyPublisher()
             }
             .eraseToAnyPublisher()
-        
-        play(combinationToPlay: combinationToPlay)
     }
     
     /// Usada para passar uma nova música para a AI
