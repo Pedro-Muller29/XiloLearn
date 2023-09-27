@@ -11,7 +11,7 @@ import SpriteKit
 // MARK: Animations for XiloKeys
 extension GameScene {
     
-    func startGameGoDownAnimation(withDuration time: TimeInterval) {
+    func animateXiloKeys(withDuration time: TimeInterval) {
         var currentWait: Double = 0
         let increaseAmount: Double = time/16
         for note in XiloKeys.allCases {

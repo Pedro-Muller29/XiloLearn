@@ -31,6 +31,13 @@ extension GameScene {
         self.nodeToXiloKeys[cKey] = .C
         self.addChild(cKey)
         
+        let cKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        cKeyWhiteBall.lineWidth = 0
+        cKeyWhiteBall.zPosition = 100
+        cKeyWhiteBall.fillColor = .white
+        cKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2, y: alturaMenu)
+        cKey.addChild(cKeyWhiteBall)
+        
         let doLabel: SKLabelNode = SKLabelNode(text: "Dó")
         doLabel.zPosition = 100
         doLabel.fontColor = .white
@@ -62,6 +69,13 @@ extension GameScene {
         self.nodeToXiloKeys[dKey] = .D1
         self.addChild(dKey)
         
+        let dKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        dKeyWhiteBall.lineWidth = 0
+        dKeyWhiteBall.zPosition = 100
+        dKeyWhiteBall.fillColor = .white
+        dKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 1), y: alturaMenu)
+        dKey.addChild(dKeyWhiteBall)
+        
         let reLabel: SKLabelNode = SKLabelNode(text: "Ré")
         reLabel.zPosition = 100
         reLabel.fontColor = .white
@@ -92,6 +106,13 @@ extension GameScene {
         self.xiloKeysToNode[.E1] = eKey
         self.nodeToXiloKeys[eKey] = .E1
         self.addChild(eKey)
+        
+        let eKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        eKeyWhiteBall.lineWidth = 0
+        eKeyWhiteBall.zPosition = 100
+        eKeyWhiteBall.fillColor = .white
+        eKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 2), y: alturaMenu)
+        eKey.addChild(eKeyWhiteBall)
         
         let miLabel: SKLabelNode = SKLabelNode(text: "Mi")
         miLabel.zPosition = 100
@@ -139,6 +160,13 @@ extension GameScene {
         fKey.addChild(faLabel)
         fKey.addChild(fLabel)
         
+        let fKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        fKeyWhiteBall.lineWidth = 0
+        fKeyWhiteBall.zPosition = 100
+        fKeyWhiteBall.fillColor = .white
+        fKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 3), y: alturaMenu)
+        fKey.addChild(fKeyWhiteBall)
+        
         // Tecla Verde Escuro, Sol, G
         let gKey: SKShapeNode = SKShapeNode(
             rect: CGRect(
@@ -154,6 +182,13 @@ extension GameScene {
         self.xiloKeysToNode[.G] = gKey
         self.nodeToXiloKeys[gKey] = .G
         self.addChild(gKey)
+        
+        let gKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        gKeyWhiteBall.lineWidth = 0
+        gKeyWhiteBall.zPosition = 100
+        gKeyWhiteBall.fillColor = .white
+        gKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 4), y: alturaMenu)
+        gKey.addChild(gKeyWhiteBall)
         
         let solLabel: SKLabelNode = SKLabelNode(text: "Sol")
         solLabel.zPosition = 100
@@ -186,6 +221,13 @@ extension GameScene {
         self.nodeToXiloKeys[aKey] = .A
         self.addChild(aKey)
         
+        let aKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        aKeyWhiteBall.lineWidth = 0
+        aKeyWhiteBall.zPosition = 100
+        aKeyWhiteBall.fillColor = .white
+        aKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 5), y: alturaMenu)
+        aKey.addChild(aKeyWhiteBall)
+        
         let laLabel: SKLabelNode = SKLabelNode(text: "Lá")
         laLabel.zPosition = 100
         laLabel.fontColor = .white
@@ -217,6 +259,13 @@ extension GameScene {
         self.nodeToXiloKeys[bKey] = .B
         self.addChild(bKey)
         
+        let bKeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        bKeyWhiteBall.lineWidth = 0
+        bKeyWhiteBall.zPosition = 100
+        bKeyWhiteBall.fillColor = .white
+        bKeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 6), y: alturaMenu)
+        bKey.addChild(bKeyWhiteBall)
+        
         let siLabel: SKLabelNode = SKLabelNode(text: "Si")
         siLabel.zPosition = 100
         siLabel.fontColor = .white
@@ -247,6 +296,13 @@ extension GameScene {
         self.xiloKeysToNode[.C2] = c2Key
         self.nodeToXiloKeys[c2Key] = .C2
         self.addChild(c2Key)
+        
+        let c2KeyWhiteBall: SKShapeNode = SKShapeNode(circleOfRadius: regraDe3ParaLargura(15))
+        c2KeyWhiteBall.lineWidth = 0
+        c2KeyWhiteBall.zPosition = 100
+        c2KeyWhiteBall.fillColor = .white
+        c2KeyWhiteBall.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 7), y: alturaMenu)
+        c2Key.addChild(c2KeyWhiteBall)
         
         let do2Label: SKLabelNode = SKLabelNode(text: "Dó")
         do2Label.zPosition = 100
