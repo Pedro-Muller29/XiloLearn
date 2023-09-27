@@ -8,6 +8,7 @@
 import SpriteKit
 import GameplayKit
 import Combine
+import CoreHaptics
 
 class GameScene: SKScene {
     
@@ -23,6 +24,9 @@ class GameScene: SKScene {
     // Combine + SimonAI
     var simonAI: SimonAI?
     var simonSubscription: AnyCancellable?
+    
+    // Haptics manager
+    let hapticManager = HapticManager()
     
     override func didMove(to view: SKView) {
         setupBackground()

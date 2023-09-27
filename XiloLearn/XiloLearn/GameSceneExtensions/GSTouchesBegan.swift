@@ -30,6 +30,7 @@ extension GameScene {
             if k.contains(touch.location(in: self)) {
                 // TODO: Check if is arcade or official mode
                 self.playNode(xilophoneKeyNode: k)
+                self.hapticManager.playHaptic(intensity: 10, sharpness: 10)
                 if let simonAI = self.simonAI {
                     let gotItRight: Bool = simonAI.validateInput(xiloKey: nodeToXiloKeys[k] ?? .A)
                     print(gotItRight ? "Acertou a nota: \(nodeToXiloKeys[k]!)" : "Errou a nota")
