@@ -9,6 +9,11 @@ extension SimonAI {
     
     /// Validate if the user input is the correct one (if its indeed the next in the sequence)
     func validateInput(xiloKey: XiloKeys) -> Bool {
+        defer {
+            if currentIndex == getCurrentSongSize() {
+                self.currentLevel += 1
+            }
+        }
         guard let nextNote = getNextExpectedNote() else { return false }
         return xiloKey == nextNote
     }
@@ -19,14 +24,7 @@ extension SimonAI {
             let currentKey = combinationToPlay[currentIndex]
             currentIndex += 1
             if currentKey != .BREAK {
-                if self.currentIndex == getCurrentSongSize() {
-                    self.currentLevel += 1
-                }
                 return currentKey
-            }
-            if self.currentIndex == getCurrentSongSize() {
-                self.currentLevel += 1
-                return nil
             }
         }
         currentIndex = 0

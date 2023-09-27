@@ -31,6 +31,21 @@ extension GameScene {
         self.nodeToXiloKeys[cKey] = .C
         self.addChild(cKey)
         
+        let doLabel: SKLabelNode = SKLabelNode(text: "Dó")
+        doLabel.zPosition = 100
+        doLabel.fontColor = .white
+        doLabel.fontSize = 50
+        doLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2, y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let cLabel: SKLabelNode = SKLabelNode(text: "C")
+        cLabel.zPosition = 100
+        cLabel.fontColor = .white
+        cLabel.fontSize = 30
+        cLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2, y: alturaGeral - regraDe3ParaAltura(20))
+        
+        cKey.addChild(doLabel)
+        cKey.addChild(cLabel)
+        
         // Tecla laranja, Ré, D1
         let dKey: SKShapeNode = SKShapeNode(
             rect: CGRect(
@@ -46,6 +61,21 @@ extension GameScene {
         self.xiloKeysToNode[.D1] = dKey
         self.nodeToXiloKeys[dKey] = .D1
         self.addChild(dKey)
+        
+        let reLabel: SKLabelNode = SKLabelNode(text: "Ré")
+        reLabel.zPosition = 100
+        reLabel.fontColor = .white
+        reLabel.fontSize = 50
+        reLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 1), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let dLabel: SKLabelNode = SKLabelNode(text: "D")
+        dLabel.zPosition = 100
+        dLabel.fontColor = .white
+        dLabel.fontSize = 30
+        dLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 1), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        dKey.addChild(reLabel)
+        dKey.addChild(dLabel)
         
         // Tecla Amarela, Mi, E1
         let eKey: SKShapeNode = SKShapeNode(
@@ -63,6 +93,21 @@ extension GameScene {
         self.nodeToXiloKeys[eKey] = .E1
         self.addChild(eKey)
         
+        let miLabel: SKLabelNode = SKLabelNode(text: "Mi")
+        miLabel.zPosition = 100
+        miLabel.fontColor = .white
+        miLabel.fontSize = 50
+        miLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 2), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let eLabel: SKLabelNode = SKLabelNode(text: "E")
+        eLabel.zPosition = 100
+        eLabel.fontColor = .white
+        eLabel.fontSize = 30
+        eLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 2), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        eKey.addChild(miLabel)
+        eKey.addChild(eLabel)
+        
         // Tecla Verde, Fá, F
         let fKey: SKShapeNode = SKShapeNode(
             rect: CGRect(
@@ -72,12 +117,27 @@ extension GameScene {
                 height: alturaGeral)
             , cornerRadius: 20)
         fKey.lineWidth = 0
-        fKey.fillColor = .green
+        fKey.fillColor = .systemGreen
         fKey.zPosition = 50
         fKey.name = "nodeF"
         self.xiloKeysToNode[.F] = fKey
         self.nodeToXiloKeys[fKey] = .F
         self.addChild(fKey)
+        
+        let faLabel: SKLabelNode = SKLabelNode(text: "Fá")
+        faLabel.zPosition = 100
+        faLabel.fontColor = .white
+        faLabel.fontSize = 50
+        faLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 3), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let fLabel: SKLabelNode = SKLabelNode(text: "F")
+        fLabel.zPosition = 100
+        fLabel.fontColor = .white
+        fLabel.fontSize = 30
+        fLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 3), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        fKey.addChild(faLabel)
+        fKey.addChild(fLabel)
         
         // Tecla Verde Escuro, Sol, G
         let gKey: SKShapeNode = SKShapeNode(
@@ -95,6 +155,21 @@ extension GameScene {
         self.nodeToXiloKeys[gKey] = .G
         self.addChild(gKey)
         
+        let solLabel: SKLabelNode = SKLabelNode(text: "Sol")
+        solLabel.zPosition = 100
+        solLabel.fontColor = .white
+        solLabel.fontSize = 50
+        solLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 4), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let gLabel: SKLabelNode = SKLabelNode(text: "G")
+        gLabel.zPosition = 100
+        gLabel.fontColor = .white
+        gLabel.fontSize = 30
+        gLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 4), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        gKey.addChild(solLabel)
+        gKey.addChild(gLabel)
+        
         // Tecla Ciano, Lá, A
         let aKey: SKShapeNode = SKShapeNode(
             rect: CGRect(
@@ -110,6 +185,21 @@ extension GameScene {
         self.xiloKeysToNode[.A] = aKey
         self.nodeToXiloKeys[aKey] = .A
         self.addChild(aKey)
+        
+        let laLabel: SKLabelNode = SKLabelNode(text: "Lá")
+        laLabel.zPosition = 100
+        laLabel.fontColor = .white
+        laLabel.fontSize = 50
+        laLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 5), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let aLabel: SKLabelNode = SKLabelNode(text: "A")
+        aLabel.zPosition = 100
+        aLabel.fontColor = .white
+        aLabel.fontSize = 30
+        aLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 5), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        aKey.addChild(laLabel)
+        aKey.addChild(aLabel)
         
         // Tecla Azul, Si, B
         let bKey: SKShapeNode = SKShapeNode(
@@ -127,6 +217,21 @@ extension GameScene {
         self.nodeToXiloKeys[bKey] = .B
         self.addChild(bKey)
         
+        let siLabel: SKLabelNode = SKLabelNode(text: "Si")
+        siLabel.zPosition = 100
+        siLabel.fontColor = .white
+        siLabel.fontSize = 50
+        siLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 6), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let bLabel: SKLabelNode = SKLabelNode(text: "B")
+        bLabel.zPosition = 100
+        bLabel.fontColor = .white
+        bLabel.fontSize = 30
+        bLabel.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 6), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        bKey.addChild(siLabel)
+        bKey.addChild(bLabel)
+        
         // Tecla Roxa, Dó, C2
         let c2Key: SKShapeNode = SKShapeNode(
             rect: CGRect(
@@ -142,14 +247,29 @@ extension GameScene {
         self.xiloKeysToNode[.C2] = c2Key
         self.nodeToXiloKeys[c2Key] = .C2
         self.addChild(c2Key)
+        
+        let do2Label: SKLabelNode = SKLabelNode(text: "Dó")
+        do2Label.zPosition = 100
+        do2Label.fontColor = .white
+        do2Label.fontSize = 50
+        do2Label.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 7), y: alturaGeral + regraDe3ParaAltura(10))
+        
+        let c2Label: SKLabelNode = SKLabelNode(text: "C")
+        c2Label.zPosition = 100
+        c2Label.fontColor = .white
+        c2Label.fontSize = 30
+        c2Label.position = CGPoint(x: self.frame.minX + larguraGeral/2 + (larguraGeral * 7), y: alturaGeral - regraDe3ParaAltura(20))
+        
+        c2Key.addChild(do2Label)
+        c2Key.addChild(c2Label)
     }
     
     // Isso foi criado pois usei uma largura de 1000 no figma na imagem para pegar as proporções, e o calculo dinâmico permite ajustar pra tamanhos diferentes de tela depois
-    private func regraDe3ParaLargura(_ valor: CGFloat) -> CGFloat {
+    func regraDe3ParaLargura(_ valor: CGFloat) -> CGFloat {
         return valor * (self.size.width / 844)
     }
     
-    private func regraDe3ParaAltura(_ valor: CGFloat) -> CGFloat {
+    func regraDe3ParaAltura(_ valor: CGFloat) -> CGFloat {
         return valor * (self.size.height / 390)
     }
 }

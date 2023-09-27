@@ -13,8 +13,8 @@ class GameScene: SKScene {
     
     // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
-    var xiloKeysToNode: [XiloKeys: SKNode] = [:]
-    var nodeToXiloKeys: [SKNode: XiloKeys] = [:]
+    var xiloKeysToNode: [XiloKeys: SKShapeNode] = [:]
+    var nodeToXiloKeys: [SKShapeNode: XiloKeys] = [:]
     var startButton: SKSpriteNode? = SKSpriteNode()
     
     // Variáveis de controle de estado
@@ -29,6 +29,7 @@ class GameScene: SKScene {
         setupKeys()
         setupStartButton()
         setupSimonAI(with: MockedSongs.ABCSong)
+        startGameGoDownAnimation(withDuration: 1)
     }
     
     func startGame() {
