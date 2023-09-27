@@ -28,8 +28,8 @@ class GameScene: SKScene {
         setupBackground()
         setupKeys()
         setupStartButton()
-        setupSimonAI(with: MockedSongs.ABCSong)
-        animateXiloKeys(withDuration: 1)
+//        setupSimonAI(with: MockedSongs.ABCSong)
+//        animateXiloKeys(withDuration: 1)
     }
     
     func startGame() {

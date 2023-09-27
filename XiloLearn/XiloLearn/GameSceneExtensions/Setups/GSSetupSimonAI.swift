@@ -22,7 +22,7 @@ extension GameScene {
                     print("self ja foi desinicializada")
                     return
                 }
-                self.playNode(xilophoneKeyNode: self.xiloKeysToNode[xiloKey] ?? SKNode())
+                self.playNode(xilophoneKeyNode: self.xiloKeysToNode[xiloKey] ?? SKShapeNode())
             })
     }
 }

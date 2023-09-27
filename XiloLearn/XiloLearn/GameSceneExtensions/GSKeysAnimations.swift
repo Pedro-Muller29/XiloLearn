@@ -26,7 +26,7 @@ extension GameScene {
         if let node = xiloKeysToNode[key] {
             node.run(SKAction.sequence([
                 .wait(forDuration: startingWait),
-                .moveBy(x: 0, y: regraDe3ParaAltura(-623), duration: time)
+                .moveTo(y: frame.minY - regraDe3ParaAltura(596/2), duration: time)
             ]))
         }
     }
