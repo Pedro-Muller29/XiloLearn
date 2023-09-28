@@ -18,21 +18,7 @@ extension GameScene {
                 }
             }
             
-            if let startButton = startButton {
-                if startButton.background.contains(touch.location(in: self)) {
-                    self.animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown, completion: {
-                        self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
-                            self.setupSimonAI(with: MockedSongs.ABCSong)
-                            print("setou")
-                        }
-                    })
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                        startButton.vanish()
-                        #warning("Aqui da pra avisar o SwiftUI que o cara comecou")
-                    })
-                    
-                }
-            }
+            checkStartButtonTouched(touch: touch)
         }
     }
     
@@ -57,5 +43,25 @@ extension GameScene {
             }
         }
         return false
+    }
+    
+    private func checkStartButtonTouched(touch: UITouch) {
+        if let startButton = startButton {
+            if startButton.background.contains(touch.location(in: self)) {
+                self.hapticManager.playHaptic(intensity: 1, sharpness: 1)
+                
+                // MARK: Funcao p fzr o botao start sumir no tempo certo com a descida e deixando os botoes prontos, alem de iniciar o simon
+                self.animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown, completion: {
+                    self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
+                        self.setupSimonAI(with: MockedSongs.ABCSong)
+                    }
+                })
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    startButton.vanish()
+                    #warning("Aqui da pra avisar o SwiftUI que o cara comecou")
+                })
+                
+            }
+        }
     }
 }
