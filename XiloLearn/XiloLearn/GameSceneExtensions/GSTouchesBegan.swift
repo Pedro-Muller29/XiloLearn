@@ -36,7 +36,7 @@ extension GameScene {
                     if gotItRight {
                         score?.updateScore(by: 1)
                     } else {
-                        score?.updateScore(by: -1)
+                        score?.updateScore(by: -10)
                         Vibration.error.vibrate()
                         listeningToSimon = true
                         simonAI.currentLevel = simonAI.currentLevel + 1 - 1
