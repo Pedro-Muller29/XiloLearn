@@ -19,6 +19,7 @@ class GameScene: SKScene, ObservableObject {
     var repeatButton: SKSpriteNode? = SKSpriteNode()
     var progressBarContainer: SKShapeNode? = SKShapeNode()
     var progressBar: SKSpriteNode? = SKSpriteNode()
+    var icon: SKSpriteNode?
     
     // Score
     var score: ScoreShower?
@@ -66,6 +67,7 @@ class GameScene: SKScene, ObservableObject {
             setupBackground()
             setupKeys()
             setupStart()
+            setupGameIcon()
         } else {
             setupBackground()
             setupKeys()
