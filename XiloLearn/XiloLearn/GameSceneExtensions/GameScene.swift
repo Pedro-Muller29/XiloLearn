@@ -28,7 +28,7 @@ class GameScene: SKScene {
         setupBackground()
         setupKeys()
         setupStartButton()
-        setupSimonAI(with: MockedSongs.ABCSong)
+        setupSimonAI(with: LibraryOfSongs.anunciacao)
     }
     
     func startGame() {
