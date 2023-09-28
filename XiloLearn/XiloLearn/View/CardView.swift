@@ -38,12 +38,11 @@ struct CardView: View {
                         }
                     }
                 }
-                
             }
             .padding()
             .background(Rectangle().fill(Color.white))
             .cornerRadius(10)
-           // .shadow(color: .gray, radius: 3, x: 2, y: 2)
+//            .shadow(color: .gray, radius: 3, x: 0.5, y: 0.2) // bianca pode n gostar
         }
         
     }

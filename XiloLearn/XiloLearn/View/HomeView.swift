@@ -1,12 +1,5 @@
-//
-//  HomeView.swift
-//  XiloLearn
-//
-//  Created by Alexandre Lemos da Silva on 27/09/23.
-//
 import Foundation
 import SwiftUI
-
 
 struct RoundedCorner: Shape {
     var radius: CGFloat = .infinity
@@ -15,6 +8,34 @@ struct RoundedCorner: Shape {
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
+    }
+}
+
+struct OutlineButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration
+            .label
+            .foregroundColor(configuration.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
+            .padding()
+            .font(.callout)
+            .frame(width: 117, height: 35)
+            .background(configuration.isPressed ? (Color(red: 0.69, green: 0.32, blue: 0.87)) : .white )
+            .cornerRadius(10)
+        
+        //            .label
+        //            .foregroundColor(configuration.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
+        //            .padding()
+        //            .background(
+        //                RoundedRectangle(
+        //                    cornerRadius: 8,
+        //                    style: .continuous
+        //                ).stroke(Color.accentColor)
+        /** .foregroundColor(.white)
+         //                                                .font(.callout)
+         //                                                .frame(width: 117, height: 35)
+         //                                                .background(Color(red: 0.69, green: 0.32, blue: 0.87))
+         //                                                .cornerRadius(10)
+         //                                                .buttonStyle(OutlineButton()) */
     }
 }
 
@@ -52,29 +73,27 @@ struct HomeView: View {
         GridItem(.fixed(200)),
         GridItem(.fixed(200))]
     
-    //static var card = MusicCardModel.sampleData[0]
     var body: some View {
         NavigationView {
             GeometryReader { proxy in
                 
                 ZStack {
-                    Color(red: 243/255, green: 243/250, blue: 243/255)
+                    Color(red: 241/255, green: 241/250, blue: 241/255)
                         .ignoresSafeArea()
                     
                     HStack() {
-
+                        
                         // coluna da esquerda
                         VStack {
-                            
                             ZStack {
-                                Color(red: 243/255, green: 243/255, blue: 243/255)
+                                Color(red: 241/255, green: 241/250, blue: 241/255)
                                 
                                 VStack(alignment: .leading) {
-                                    Text("Select a track")
+                                    Text("Select a track ✨")
                                         .font(.title)
                                         .padding(.top)
                                     
-                        
+                                    // displays the categories
                                     HStack(){
                                         ForEach(0..<categories.count ) { index in
                                             
@@ -83,24 +102,19 @@ struct HomeView: View {
                                                 selected = categories[index]
                                                 
                                             }
-                                                .foregroundColor(.white)
-                                                .font(.callout)
-                                                .frame(width: 117, height: 35)
-                                                .background(Color(red: 0.69, green: 0.32, blue: 0.87))
-                                                .cornerRadius(10)
-                                              
-                                               
+                                            .buttonStyle(OutlineButton())
                                         }
                                     }
                                     
-                                    
+                                    // display the cards by the selected categorie
+                                    // TODO: on pressed calls the gameScene class with the specified music
                                     ScrollView {
                                         LazyVGrid(columns: layout) {
                                             ForEach(0..<items.count ) { index in
                                                 
                                                 if selected == "All" {
                                                     CardView(card: items[index])
-                                                  
+                                                    
                                                 } else if selected.compare(items[index].categorie, options: .caseInsensitive) == .orderedSame {
                                                     // a is equals to A
                                                     CardView(card: items[index])
@@ -108,15 +122,15 @@ struct HomeView: View {
                                                 }
                                             }
                                         }
-                                    }
+                                    } // fim scrollView
                                 }
                             }
                         }
                         
                         // coluna direita
                         VStack {
+                            // imagem de cabecalho
                             ZStack {
-                                // imagem de cabecalho
                                 Image("SideMenuImage")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -131,7 +145,7 @@ struct HomeView: View {
                                 .frame(width: 80.0, height: 80.0)
                                 .aspectRatio(contentMode: .fit)
                                 .clipShape(Circle())
-                            
+                                .padding(-15)
                             
                             // pontuacao mocada
                             Text("1457")
@@ -141,26 +155,25 @@ struct HomeView: View {
                             Text("Score")
                                 .font(.subheadline)
                                 .fontWeight(.medium)
+                                .padding(.bottom)
                             
-                            Divider()
-                            
-                            Text("Ranking ⭐️")
-                            Text("Favorites ❤️")
-                            Text("Avatars 🧍‍♀️")
-                            Text("Settings ⚙️")
-                            
+                            // mocado, ainda centralizar esses conteudos
                             List {
-                                List(AllScreens.allCases) {
-                                    $0.self.view                 // << data knows its presenter
-                                }
+                                Text("Ranking")
+                                Text("Favorites")
+                                Text("Avatars")
+                                Text("Settings")
                             }
+                            .background(Color(red: 241/255, green: 241/250, blue: 241/255))
+                            .ignoresSafeArea()
+                            .padding(-20)
                             
                         }
-                        .frame(width: proxy.size.width * 0.2, height: proxy.size.height)
+                        .frame(minWidth: proxy.size.width * 0.2, maxWidth: .infinity,  minHeight: proxy.size.height, maxHeight: proxy.size.height)
                         .background(Color.white)
                         .cornerRadius(30, corners: .topLeft) // deixando o canto com a impressaozinha
-                        .padding(.trailing)
                     }
+                    .ignoresSafeArea(.container, edges: [.top, .trailing])
                     .padding(.horizontal)
                     
                 }
@@ -168,11 +181,9 @@ struct HomeView: View {
                 .padding(.trailing)
             }
             .ignoresSafeArea(.container)
-            // .ignoresSafeArea(.all)
         }
     }
 }
-
 
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
