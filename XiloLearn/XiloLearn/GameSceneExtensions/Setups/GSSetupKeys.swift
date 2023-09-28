@@ -11,11 +11,12 @@ import SpriteKit
 extension GameScene {
     func setupKeys() {
         
-        let larguraGeral = regraDe3ParaLargura(107)
+        let larguraGeral = regraDe3ParaLargura(95.5)
         let alturaGeral = regraDe3ParaAltura(596)
         let alturaMenu = regraDe3ParaAltura(380)
         let alturaNotas = alturaGeral/2 - regraDe3ParaAltura(62)
         let alturaLetra = alturaGeral/2 - regraDe3ParaAltura(97)
+        
         
         // Tecla vermelha, Dó, C1
         let cKey: SKShapeNode = SKShapeNode(
@@ -23,7 +24,9 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        cKey.position = CGPoint(x: self.frame.minX + (0.5 * larguraGeral) - 1, y: alturaMenu)
+        cKey.position = CGPoint(
+            x: self.frame.minX + (0.5 * larguraGeral)  + regraDe3ParaLargura(40),
+            y: alturaMenu)
         cKey.lineWidth = 0
         cKey.fillColor = .systemRed
         cKey.strokeColor = UIColor(red: 255/255, green: 180/255, blue: 175/255, alpha: 1)
@@ -62,7 +65,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        dKey.position = CGPoint(x: self.frame.minX + (1.5 * larguraGeral) - 1, y: alturaMenu)
+        dKey.position = CGPoint(x: self.frame.minX + (1.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         dKey.lineWidth = 0
         dKey.fillColor = .systemOrange
         dKey.strokeColor = UIColor(red: 255/255, green: 223/255, blue: 179/255, alpha: 1)
@@ -102,7 +105,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        eKey.position = CGPoint(x: self.frame.minX + (2.5 * larguraGeral) - 1, y: alturaMenu)
+        eKey.position = CGPoint(x: self.frame.minX + (2.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         eKey.lineWidth = 0
         eKey.fillColor = .systemYellow
         eKey.strokeColor = UIColor(red: 255/255, green: 240/255, blue: 179/255, alpha: 1)
@@ -141,7 +144,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        fKey.position = CGPoint(x: self.frame.minX + (3.5 * larguraGeral) - 1, y: alturaMenu)
+        fKey.position = CGPoint(x: self.frame.minX + (3.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         fKey.lineWidth = 0
         fKey.fillColor = .systemGreen
         fKey.strokeColor = UIColor(red: 191/255, green: 238/255, blue: 203/255, alpha: 1)
@@ -181,7 +184,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        gKey.position = CGPoint(x: self.frame.minX + (4.5 * larguraGeral) - 1, y: alturaMenu)
+        gKey.position = CGPoint(x: self.frame.minX + (4.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         gKey.lineWidth = 0
         gKey.fillColor = UIColor(red: 0, green: 146/255, blue: 42/255, alpha: 1)
         gKey.strokeColor = UIColor(red: 120/255, green: 255/255, blue: 159/255, alpha: 1)
@@ -221,7 +224,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        aKey.position = CGPoint(x: self.frame.minX + (5.5 * larguraGeral) - 1, y: alturaMenu)
+        aKey.position = CGPoint(x: self.frame.minX + (5.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         aKey.lineWidth = 0
         aKey.fillColor = .systemCyan
         aKey.strokeColor = UIColor(red: 176/255, green: 232/255, blue: 255/255, alpha: 1)
@@ -261,7 +264,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        bKey.position = CGPoint(x: self.frame.minX + (6.5 * larguraGeral) - 1, y: alturaMenu)
+        bKey.position = CGPoint(x: self.frame.minX + (6.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         bKey.lineWidth = 0
         bKey.fillColor = .systemBlue
         bKey.strokeColor = UIColor(red: 179/255, green: 215/255, blue: 255/255, alpha: 1)
@@ -301,7 +304,7 @@ extension GameScene {
                 width: larguraGeral,
                 height: alturaGeral),
             cornerRadius: 20)
-        c2Key.position = CGPoint(x: self.frame.minX + (7.5 * larguraGeral) - 1, y: alturaMenu)
+        c2Key.position = CGPoint(x: self.frame.minX + (7.5 * larguraGeral)  + regraDe3ParaLargura(40), y: alturaMenu)
         c2Key.lineWidth = 0
         c2Key.fillColor = .systemPurple
         c2Key.strokeColor = UIColor(red: 224/255, green: 189/255, blue: 242/255, alpha: 1)

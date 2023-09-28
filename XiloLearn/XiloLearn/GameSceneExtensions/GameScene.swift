@@ -10,7 +10,7 @@ import GameplayKit
 import Combine
 import CoreHaptics
 
-class GameScene: SKScene {
+class GameScene: SKScene, ObservableObject {
     
     // Nodos
     var xiloBackground: SKSpriteNode? = SKSpriteNode()
@@ -23,6 +23,9 @@ class GameScene: SKScene {
     
     // Variáveis de controle de estado
     @MainActor var listeningToSimon: Bool = false
+    var isMenu: Bool
+    @Published var gotOutOfMenu: Bool = true
+    @Published var isPlaying: Bool = false
     
     // Combine + SimonAI
     var simonAI: SimonAI?
@@ -31,29 +34,55 @@ class GameScene: SKScene {
     // Haptics manager
     let hapticManager = HapticManager()
     
-    override func didMove(to view: SKView) {
-        setupBackground()
-        setupKeys()
-        setupStart()
-        
-//        animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown)
-//        animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
-        setupScore()
-        // MARK: abaixo só p se divertir
-//        DispatchQueue.global().async {
-//            Task {
-//                while true {
-//                    try! await Task.sleep(nanoseconds: 1000000000)
-//                    self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
-//                    try! await Task.sleep(nanoseconds: 1000000000)
-//                    self.animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown)
-//                }
-//            }
-//        }
-//        self.setupSimonAI(with: MockedSongs.ABCSong)
+    // song
+    var song: [XiloKeys]
+    
+    init(startingMenu: Bool, song: [XiloKeys], size: CGSize) {
+        self.song = song
+        self.isMenu = startingMenu
+        super.init(size: size)
+        if isMenu {
+            gotOutOfMenu = false
+        } else {
+            isPlaying = true
+        }
     }
     
-    func startGame() {
-
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func didMove(to view: SKView) {
+        self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        self.scaleMode = .aspectFit
+        if isMenu {
+            setupBackground()
+            setupKeys()
+            setupStart()
+        } else {
+            setupBackground()
+            setupKeys()
+            setupScore()
+            animateXiloKeys(withDuration: 0.01, with: .makeKeyGoOutDown, completion: {
+                self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
+                    self.setupSimonAI(with: self.song)
+                }
+            })
+        }
+    }
+    
+    func setupSong(with song: [XiloKeys]) {
+        self.removeAllChildren()
+        print("tamanho: ", self.children.count)
+        isPlaying = true
+        isMenu = false
+//        setupBackground()
+//        setupKeys()
+//        setupScore()
+//        animateXiloKeys(withDuration: 0, with: .makeKeyGoOutDown, completion: {
+//            self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
+//                self.setupSimonAI(with: self.song)
+//            }
+//        })
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C963D702AC35AED00DA8CBD /* HapticsManager.swift */; };
 		1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */; };
-		1CFB70CE2AC21C06005AE041 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB70CD2AC21C06005AE041 /* MenuViewController.swift */; };
 		1CFB70D92AC22334005AE041 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D02AC22332005AE041 /* b.wav */; };
 		1CFB70DA2AC22334005AE041 /* e1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D12AC22333005AE041 /* e1.wav */; };
 		1CFB70DB2AC22334005AE041 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D22AC22333005AE041 /* a.wav */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		1C963D702AC35AED00DA8CBD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTouchesBegan.swift; sourceTree = "<group>"; };
-		1CFB70CD2AC21C06005AE041 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1CFB70D02AC22332005AE041 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
 		1CFB70D12AC22333005AE041 /* e1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = e1.wav; sourceTree = "<group>"; };
 		1CFB70D22AC22333005AE041 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 				F92FFE472AC4B3C400F73E77 /* Fonts */,
 				E7F2B3332AC4AA640000E8F0 /* mugen.swift */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
-				1CFB70CD2AC21C06005AE041 /* MenuViewController.swift */,
 				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
 				F9D959CF2AC204F0005E23E8 /* GameViewController.swift */,
 				F9C3EB6D2AC4BE6A00829513 /* Classes */,
@@ -349,7 +346,6 @@
 				F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */,
 				F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */,
 				1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */,
-				1CFB70CE2AC21C06005AE041 /* MenuViewController.swift in Sources */,
 				F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */,
 				F9D959ED2AC21CC0005E23E8 /* GSPlayNode.swift in Sources */,
 				F9C3EB6F2AC4BE7A00829513 /* ScoreShower.swift in Sources */,
@@ -501,8 +497,8 @@
 				DEVELOPMENT_TEAM = 2V5RBDFH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XiloLearn/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "Launch screen interface file base name";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -531,8 +527,8 @@
 				DEVELOPMENT_TEAM = 2V5RBDFH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XiloLearn/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "Launch screen interface file base name";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -29,7 +29,7 @@ extension GameScene {
                 self.playNode(k)
                 self.hapticManager.playHaptic(intensity: 10, sharpness: 10)
                 if let simonAI = self.simonAI {
-                    let gotItRight: Bool = simonAI.validateInput(xiloKey: nodeToXiloKeys[k] ?? .BREAK)
+                    let gotItRight: Bool = simonAI.validateInput(xiloKey: nodeToXiloKeys[k] ?? .BREAK, isGameOn: &isPlaying)
                     if gotItRight {
                         score?.updateScore(by: 1)
                     } else {
@@ -49,12 +49,9 @@ extension GameScene {
         if let startButton = startButton {
             if startButton.background.contains(touch.location(in: self)) {
                 self.hapticManager.playHaptic(intensity: 1, sharpness: 1)
-                
                 // MARK: Funcao p fzr o botao start sumir no tempo certo com a descida e deixando os botoes prontos, alem de iniciar o simon
                 self.animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown, completion: {
-                    self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
-                        self.setupSimonAI(with: MockedSongs.ABCSong)
-                    }
+                    self.gotOutOfMenu = true
                 })
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                     startButton.vanish()
