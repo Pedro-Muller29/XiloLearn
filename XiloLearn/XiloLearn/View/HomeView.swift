@@ -11,33 +11,41 @@ struct RoundedCorner: Shape {
     }
 }
 
-struct OutlineButton: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration
-            .label
-            .foregroundColor(configuration.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
-            .padding()
-            .font(.callout)
-            .frame(width: 117, height: 35)
-            .background(configuration.isPressed ? (Color(red: 0.69, green: 0.32, blue: 0.87)) : .white )
-            .cornerRadius(10)
-        
-        //            .label
-        //            .foregroundColor(configuration.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
-        //            .padding()
-        //            .background(
-        //                RoundedRectangle(
-        //                    cornerRadius: 8,
-        //                    style: .continuous
-        //                ).stroke(Color.accentColor)
-        /** .foregroundColor(.white)
-         //                                                .font(.callout)
-         //                                                .frame(width: 117, height: 35)
-         //                                                .background(Color(red: 0.69, green: 0.32, blue: 0.87))
-         //                                                .cornerRadius(10)
-         //                                                .buttonStyle(OutlineButton()) */
+extension View {
+    func outlined(_ outlined: Bool = false) -> some View {
+        modifier(OutlinedButton(isPressed: outlined))
     }
 }
+
+struct OutlinedButton: ViewModifier {
+    var isPressed: Bool = false
+    
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(self.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
+            .padding()
+          //  .font(.callout)
+            .font(.system(size: 15, weight: .heavy, design: .default))
+           // .bold()
+        
+            .frame(width: 117, height: 35)
+            .background(self.isPressed ? (Color(red: 0.69, green: 0.32, blue: 0.87)) : .white )
+            .cornerRadius(10)
+    }
+}
+
+//struct OutlineButton: ButtonStyle {
+//    func makeBody(configuration: Configuration) -> some View {
+//        configuration
+//            .label
+//            .foregroundColor(configuration.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
+//            .padding()
+//            .font(.callout)
+//            .frame(width: 117, height: 35)
+//            .background(configuration.isPressed ? (Color(red: 0.69, green: 0.32, blue: 0.87)) : .white )
+//            .cornerRadius(10)
+//        }
+//}
 
 enum AllScreens: CaseIterable, Identifiable {   // << type !!
     var id: Self { self }
@@ -67,7 +75,8 @@ struct HomeView: View {
     @State var categories: [String] = ["All", "Rock", "Country", "Pop", "Classical"]
     @State var selected: String = "All"
     
-    let items: [MusicCardModel]
+    @State var items: [MusicCardModel]
+    
     let layout = [
         GridItem(.fixed(200)),
         GridItem(.fixed(200)),
@@ -89,9 +98,11 @@ struct HomeView: View {
                                 Color(red: 241/255, green: 241/250, blue: 241/255)
                                 
                                 VStack(alignment: .leading) {
-                                    Text("Select a track ✨")
+                                    Text("Select a track")
                                         .font(.title)
                                         .padding(.top)
+                                        .padding(.bottom, 1)
+                                        //.padding()
                                     
                                     // displays the categories
                                     HStack(){
@@ -102,22 +113,24 @@ struct HomeView: View {
                                                 selected = categories[index]
                                                 
                                             }
-                                            .buttonStyle(OutlineButton())
+                                            .outlined(self.selected.contains(self.categories[index]) ? true : false)
+                                            //.buttonStyle(OutlineButton())
                                         }
                                     }
+                                    
                                     
                                     // display the cards by the selected categorie
                                     // TODO: on pressed calls the gameScene class with the specified music
                                     ScrollView {
                                         LazyVGrid(columns: layout) {
-                                            ForEach(0..<items.count ) { index in
+                                            ForEach($items, id: \.self) { card in
                                                 
                                                 if selected == "All" {
-                                                    CardView(card: items[index])
+                                                    CardView(card: card)
                                                     
-                                                } else if selected.compare(items[index].categorie, options: .caseInsensitive) == .orderedSame {
+                                                } else if selected.compare(card.wrappedValue.categorie, options: .caseInsensitive) == .orderedSame {
                                                     // a is equals to A
-                                                    CardView(card: items[index])
+                                                    CardView(card: card)
                                                     
                                                 }
                                             }
@@ -140,12 +153,20 @@ struct HomeView: View {
                             }
                             
                             // cabeca da pessoa
-                            Image("mainLogo")
-                                .resizable()
-                                .frame(width: 80.0, height: 80.0)
-                                .aspectRatio(contentMode: .fit)
-                                .clipShape(Circle())
-                                .padding(-15)
+                            
+                            ZStack {
+                                
+                                Circle()
+                                    .fill(.white)
+                                
+                                Image("mainLogo")
+                                    .resizable()
+                                    .frame(width: 73.0, height: 73.0)
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(Circle())
+                            }
+                            .frame(width: 80.0, height: 80.0)
+                            .padding(-20)
                             
                             // pontuacao mocada
                             Text("1457")
@@ -153,10 +174,11 @@ struct HomeView: View {
                                 .fontWeight(.bold)
                             
                             Text("Score")
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .padding(.bottom)
+                                .fontWeight(.light)
+                              
                             
+                            Divider()
+
                             // mocado, ainda centralizar esses conteudos
                             List {
                                 Text("Ranking")
@@ -166,7 +188,8 @@ struct HomeView: View {
                             }
                             .background(Color(red: 241/255, green: 241/250, blue: 241/255))
                             .ignoresSafeArea()
-                            .padding(-20)
+                            .listStyle(.plain)
+                            .listRowSeparator(.hidden)
                             
                         }
                         .frame(minWidth: proxy.size.width * 0.2, maxWidth: .infinity,  minHeight: proxy.size.height, maxHeight: proxy.size.height)
