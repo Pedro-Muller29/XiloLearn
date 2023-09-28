@@ -82,15 +82,12 @@ extension GameScene {
         self.progressBar = progressBar
     }
     
-    func updateProgress(totalSequencesInSong: Int) {
+    func updateProgress(totalSequencesInSong: Double) {
         
         // scoreUnit é a porção de largura que vai ser somada a progressBar, dado o total de sequências de notas tocadas
-        let scoreUnit: CGFloat = regraDe3ParaLargura(375) / CGFloat(totalSequencesInSong)
-        
-        if (((self.progressBar?.size.width ?? 0.0) + scoreUnit) <= (regraDe3ParaLargura(375))) {
-            
+        let scoreUnit: CGFloat = CGFloat(totalSequencesInSong) * regraDe3ParaLargura(375)
             // increase progressBar
-            self.progressBar?.run(SKAction.resize(byWidth: scoreUnit, height: 0, duration: 0.1))
+        self.progressBar?.run(SKAction.resize(toWidth: scoreUnit, duration: 1))
          
             if self.progressBar?.size.width ?? 0.0 >= (regraDe3ParaLargura(375) / 2) - 20 - regraDe3ParaLargura(0) {
                 self.star1 = true
@@ -102,12 +99,5 @@ extension GameScene {
             if self.progressBar?.size.width ?? 0.0 >= ((regraDe3ParaLargura(375) / 2) + (regraDe3ParaLargura(375) / 4)) - 20 - regraDe3ParaLargura(0) {
                 self.star2 = true
             }
-        }
-        // debug
-//        print("Width of progressBar: \(self.progressBar?.size.width ?? 0.0)")
-//        print("Width of container: \(regraDe3ParaLargura(375))")
-//        print("ScoreUnit: \(scoreUnit)")
-        print("\(star1)")
-        print("\(star2)")
     }
 }
