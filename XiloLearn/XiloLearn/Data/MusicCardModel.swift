@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum Categories: CaseIterable, Identifiable {   // << type !!
+enum Categories: String, CaseIterable, Identifiable {   // << type !!
     var id: Self { self }
     
     case rock, Country, Pop, Classical   // << known variants
@@ -31,7 +31,7 @@ enum Categories: CaseIterable, Identifiable {   // << type !!
     
 }
 
-struct MusicCardModel {  // meu DailyScrum
+struct MusicCardModel: Hashable {
     var title: String
     var artist: String
     var durantion: Float
