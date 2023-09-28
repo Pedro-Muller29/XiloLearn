@@ -14,6 +14,9 @@ extension GameScene {
             // Checa se alguma das notas foi tocada e toca o som da nota.
             if !listeningToSimon {
                 if evaluateTouchesInXiloKeys(touch: touch) {
+                    if let simonAI = simonAI {
+                        updateProgress(totalSequencesInSong: min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1))
+                    }
                     continue
                 }
             }
