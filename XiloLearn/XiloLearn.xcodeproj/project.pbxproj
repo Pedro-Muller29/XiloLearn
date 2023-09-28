@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C68F12F2AC4A02000681DB7 /* GSSetupProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */; };
+		1C68F1312AC5ED4C00681DB7 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F1302AC5ED4C00681DB7 /* InstructionView.swift */; };
+		1C68F1332AC5ED7000681DB7 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F1322AC5ED7000681DB7 /* GuideView.swift */; };
+		1C68F1352AC5ED7C00681DB7 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F1342AC5ED7C00681DB7 /* EndView.swift */; };
 		1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C963D702AC35AED00DA8CBD /* HapticsManager.swift */; };
 		1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */; };
 		1CFB70D92AC22334005AE041 /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D02AC22332005AE041 /* b.wav */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupProgressBar.swift; sourceTree = "<group>"; };
+		1C68F1302AC5ED4C00681DB7 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		1C68F1322AC5ED7000681DB7 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		1C68F1342AC5ED7C00681DB7 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		1C963D702AC35AED00DA8CBD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTouchesBegan.swift; sourceTree = "<group>"; };
 		1CFB70D02AC22332005AE041 /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
@@ -182,6 +188,9 @@
 				F9D959D12AC204F0005E23E8 /* Main.storyboard */,
 				F9D959D42AC204F1005E23E8 /* Assets.xcassets */,
 				F9D959D62AC204F1005E23E8 /* LaunchScreen.storyboard */,
+				1C68F1302AC5ED4C00681DB7 /* InstructionView.swift */,
+				1C68F1322AC5ED7000681DB7 /* GuideView.swift */,
+				1C68F1342AC5ED7C00681DB7 /* EndView.swift */,
 			);
 			path = XiloLearn;
 			sourceTree = "<group>";
@@ -217,7 +226,6 @@
 				F9D959E62AC20CE5005E23E8 /* GSSetupKeys.swift */,
 				F9D959E82AC21836005E23E8 /* GSSetupRepeatButton.swift */,
 				1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */,
-				F9D959E82AC21836005E23E8 /* GSSetupStartButton.swift */,
 				F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */,
 			);
 			path = Setups;
@@ -309,9 +317,11 @@
 				F92FFE452AC45D3400F73E77 /* PauseAndPlaySimonAI.swift in Sources */,
 				F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */,
 				1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */,
+				1C68F1312AC5ED4C00681DB7 /* InstructionView.swift in Sources */,
 				1CFD95852AC3655000D62912 /* AudioManager.swift in Sources */,
 				F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */,
 				F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */,
+				1C68F1332AC5ED7000681DB7 /* GuideView.swift in Sources */,
 				F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */,
 				1C963D712AC35AED00DA8CBD /* HapticsManager.swift in Sources */,
 				F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */,
@@ -324,8 +334,9 @@
 				E7F2B2E82AC2FB1F0000E8F0 /* NotesReference.swift in Sources */,
 				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
 				F9D959E92AC21836005E23E8 /* GSSetupRepeatButton.swift in Sources */,
+				1C68F1352AC5ED7C00681DB7 /* EndView.swift in Sources */,
 				F92FFE432AC3B7D700F73E77 /* GSKeysAnimations.swift in Sources */,
-				F9D959E92AC21836005E23E8 /* GSSetupStartButton.swift in Sources */,
+				F9D959E92AC21836005E23E8 /* GSSetupRepeatButton.swift in Sources */,
 				F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

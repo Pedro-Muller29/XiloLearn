@@ -34,19 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
-        /// This block of code allows the app to play sounds when it's on silent mode:
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
-            print("AVAudioSession Category Playback OK")
-            do {
-                try AVAudioSession.sharedInstance().setActive(true)
-                print("AVAudioSession is Active")
-            } catch {
-                print(error.localizedDescription)
-            }
-        } catch {
-            print("Error while setting AVAudioSession.Category to playback: \(error.localizedDescription)")
-        }
+        /// This block of code allows the app to play sounds when the device is on silent mode:
+        
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {

@@ -17,7 +17,8 @@ class GameScene: SKScene {
     var xiloKeysToNode: [XiloKeys: SKShapeNode] = [:]
     var nodeToXiloKeys: [SKShapeNode: XiloKeys] = [:]
     var repeatButton: SKSpriteNode? = SKSpriteNode()
-    var startButton: SKSpriteNode? = SKSpriteNode()
+    var progressBarContainer: SKShapeNode? = SKShapeNode()
+    var progressBar: SKSpriteNode? = SKSpriteNode()
     
     // Score
     var score: ScoreShower?
@@ -32,10 +33,11 @@ class GameScene: SKScene {
     // Haptics manager
     let hapticManager = HapticManager()
     
-    // Progress bar controller value
-    var progressBar: SKSpriteNode?
+    // Controle da progress bar
     var progress: Int = 0
-    var maxProgress: Int = 375
+    var star1: Bool = false
+    var star2: Bool = false
+    var star3: Bool = false
     
     override func didMove(to view: SKView) {
         setupBackground()
@@ -48,9 +50,5 @@ class GameScene: SKScene {
             self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame)
             self.setupSimonAI(with: MockedSongs.ABCSong)
         })
-    }
-    
-    func startGame() {
-
     }
 }
