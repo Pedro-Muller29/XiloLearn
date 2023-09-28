@@ -27,10 +27,10 @@ class SimonAI {
     var currentIndex: Int = 0
     
     // Current level indicates how many increasePerCycle have been done
-    var currentLevel: Int = 1{
+    var currentLevel: Int = 1 {
         // Updates the current sequence being presented based on this new level
         didSet {
-            self.play(combinationToPlay: Array(combinationToPlay[0..<(currentLevel * increasePerCycle) + 1]))
+            self.play(combinationToPlay:[.STARTCURRENTSEQUENCE] + Array(combinationToPlay[0..<(currentLevel * increasePerCycle) + 1]) + [.FINISHCURRENTSEQUENCE])
             self.currentIndex = 0
         }
     }
@@ -41,10 +41,11 @@ class SimonAI {
         self.timerInterval = timerInterval
         
         // publisher responsável por enviar arrays para o publisher "playMusicSubscription"
-        self.musicsSubject = .init(Array(combinationToPlay[0..<(increasePerCycle) + 1]))
+        self.musicsSubject = .init([.STARTCURRENTSEQUENCE] + Array(combinationToPlay[0..<(increasePerCycle) + 1]) + [.FINISHCURRENTSEQUENCE])
         
         // Esse publisher é responsável por enviar uma tecla a cada "timerInterval"
         self.playMusicSubscription = musicsSubject
+            .debounce(for: 0.2, scheduler: RunLoop.main)
             .flatMap { music -> AnyPublisher<XiloKeys, Never> in
                 Timer.publish(every: timerInterval, on: .current, in: .default)
                     .autoconnect()

@@ -9,5 +9,7 @@ import Foundation
 import SpriteKit
 
 extension GameScene {
-    
+    func setupScore() {
+        score = ScoreShower(scene: self)
+    }
 }

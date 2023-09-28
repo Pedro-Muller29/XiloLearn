@@ -13,8 +13,7 @@ extension GameScene {
     /// This function plays the sound of the xilophone key and animates it.
     /// - Parameters:
     ///     - xilophoneKeyNode: The node for the xilophone key hitbox.
-    func playNode(xilophoneKeyNode node: SKShapeNode){
-        #warning("Colocar as animações aqui depois")
+    func playNode(_ node: SKShapeNode){
         switch node.name {
         case "nodeA":
             /// play sound

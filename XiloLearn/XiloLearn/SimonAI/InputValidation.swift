@@ -8,9 +8,12 @@
 extension SimonAI {
     
     /// Validate if the user input is the correct one (if its indeed the next in the sequence)
-    func validateInput(xiloKey: XiloKeys) -> Bool {
+    func validateInput(xiloKey: XiloKeys, isGameOn: inout Bool) -> Bool {
         defer {
             if currentIndex == getCurrentSongSize() {
+                if self.combinationToPlay.count <= Array(combinationToPlay[0..<(currentLevel * increasePerCycle) + 1]).count {
+                    isGameOn = false
+                }
                 self.currentLevel += 1
             }
         }

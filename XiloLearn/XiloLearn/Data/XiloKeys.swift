@@ -9,5 +9,5 @@ import Foundation
 
 ///
 enum XiloKeys: Int, CaseIterable {
-    case C, D1, E1, F, G, A, B, C2, D2, E2, BREAK
+    case C, D1, E1, F, G, A, B, C2, D2, E2, BREAK, FINISHCURRENTSEQUENCE, STARTCURRENTSEQUENCE // essas últimas indicam o fim o inicio de uma sequencia do simon. Workaroundei, perdao
 }

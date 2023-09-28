@@ -24,21 +24,29 @@
 		1CFB70E12AC22334005AE041 /* sweep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1CFB70D82AC22334005AE041 /* sweep.wav */; };
 		1CFD95852AC3655000D62912 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD95842AC3655000D62912 /* AudioManager.swift */; };
 		E7F2B2E82AC2FB1F0000E8F0 /* NotesReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B2E72AC2FB1F0000E8F0 /* NotesReference.swift */; };
+		E7F2B3212AC3BDCA0000E8F0 /* LibraryOfSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B3202AC3BDCA0000E8F0 /* LibraryOfSongs.swift */; };
+		E7F2B32A2AC49FAE0000E8F0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B3292AC49FAE0000E8F0 /* HomeView.swift */; };
+		E7F2B32C2AC4A26F0000E8F0 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B32B2AC4A26F0000E8F0 /* RankingView.swift */; };
+		E7F2B32E2AC4A27E0000E8F0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B32D2AC4A27E0000E8F0 /* FavoritesView.swift */; };
+		E7F2B3302AC4A28D0000E8F0 /* AvatarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B32F2AC4A28D0000E8F0 /* AvatarsView.swift */; };
+		E7F2B3322AC4A2980000E8F0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B3312AC4A2980000E8F0 /* SettingsView.swift */; };
+		E7F2B3342AC4AA640000E8F0 /* mugen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B3332AC4AA640000E8F0 /* mugen.swift */; };
+		E7F2B3362AC4BFE40000E8F0 /* MusicCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B3352AC4BFE40000E8F0 /* MusicCardModel.swift */; };
+		E7F2B3382AC4ECA00000E8F0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B3372AC4ECA00000E8F0 /* CardView.swift */; };
 		F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE362AC3134900F73E77 /* MockedSongs.swift */; };
 		F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */; };
 		F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */; };
 		F92FFE3F2AC3459E00F73E77 /* InputValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE3E2AC3459E00F73E77 /* InputValidation.swift */; };
 		F92FFE432AC3B7D700F73E77 /* GSKeysAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE422AC3B7D700F73E77 /* GSKeysAnimations.swift */; };
-		F92FFE452AC45D3400F73E77 /* PauseAndPlaySimonAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92FFE442AC45D3400F73E77 /* PauseAndPlaySimonAI.swift */; };
 		F9C3EB6C2AC4BE2800829513 /* GSSetupScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */; };
 		F9C3EB6F2AC4BE7A00829513 /* ScoreShower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB6E2AC4BE7A00829513 /* ScoreShower.swift */; };
-		F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959C72AC204F0005E23E8 /* AppDelegate.swift */; };
+		F9C3EB722AC59A7600829513 /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB712AC59A7600829513 /* Vibration.swift */; };
+		F9C3EB742AC5D0AD00829513 /* StartButtonShower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB732AC5D0AD00829513 /* StartButtonShower.swift */; };
+		F9C3EB762AC5D30900829513 /* GSSetupStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB752AC5D30900829513 /* GSSetupStart.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
 		F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CF2AC204F0005E23E8 /* GameViewController.swift */; };
-		F9D959D32AC204F0005E23E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D959D12AC204F0005E23E8 /* Main.storyboard */; };
 		F9D959D52AC204F1005E23E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D959D42AC204F1005E23E8 /* Assets.xcassets */; };
-		F9D959D82AC204F1005E23E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D959D62AC204F1005E23E8 /* LaunchScreen.storyboard */; };
 		F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */; };
 		F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959E22AC207A0005E23E8 /* XiloKeys.swift */; };
 		F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */; };
@@ -65,25 +73,33 @@
 		1CFB70D82AC22334005AE041 /* sweep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sweep.wav; sourceTree = "<group>"; };
 		1CFD95842AC3655000D62912 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		E7F2B2E72AC2FB1F0000E8F0 /* NotesReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesReference.swift; sourceTree = "<group>"; };
+		E7F2B3202AC3BDCA0000E8F0 /* LibraryOfSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryOfSongs.swift; sourceTree = "<group>"; };
+		E7F2B3292AC49FAE0000E8F0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E7F2B32B2AC4A26F0000E8F0 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		E7F2B32D2AC4A27E0000E8F0 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		E7F2B32F2AC4A28D0000E8F0 /* AvatarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsView.swift; sourceTree = "<group>"; };
+		E7F2B3312AC4A2980000E8F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E7F2B3332AC4AA640000E8F0 /* mugen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mugen.swift; sourceTree = "<group>"; };
+		E7F2B3352AC4BFE40000E8F0 /* MusicCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCardModel.swift; sourceTree = "<group>"; };
+		E7F2B3372AC4ECA00000E8F0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F92FFE362AC3134900F73E77 /* MockedSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSongs.swift; sourceTree = "<group>"; };
 		F92FFE3A2AC3246E00F73E77 /* SimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonAI.swift; sourceTree = "<group>"; };
 		F92FFE3C2AC328C300F73E77 /* GSSetupSimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupSimonAI.swift; sourceTree = "<group>"; };
 		F92FFE3E2AC3459E00F73E77 /* InputValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidation.swift; sourceTree = "<group>"; };
 		F92FFE422AC3B7D700F73E77 /* GSKeysAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSKeysAnimations.swift; sourceTree = "<group>"; };
-		F92FFE442AC45D3400F73E77 /* PauseAndPlaySimonAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseAndPlaySimonAI.swift; sourceTree = "<group>"; };
 		F92FFE462AC4B00200F73E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F92FFE482AC4B3D600F73E77 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		F92FFE492AC4B3D600F73E77 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupScoreLabel.swift; sourceTree = "<group>"; };
 		F9C3EB6E2AC4BE7A00829513 /* ScoreShower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShower.swift; sourceTree = "<group>"; };
+		F9C3EB712AC59A7600829513 /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
+		F9C3EB732AC5D0AD00829513 /* StartButtonShower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonShower.swift; sourceTree = "<group>"; };
+		F9C3EB752AC5D30900829513 /* GSSetupStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupStart.swift; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9D959C72AC204F0005E23E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F9D959CD2AC204F0005E23E8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F9D959CF2AC204F0005E23E8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		F9D959D22AC204F0005E23E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9D959D42AC204F1005E23E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F9D959D72AC204F1005E23E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9D959DF2AC206F5005E23E8 /* GSUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSUpdate.swift; sourceTree = "<group>"; };
 		F9D959E22AC207A0005E23E8 /* XiloKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiloKeys.swift; sourceTree = "<group>"; };
 		F9D959E42AC20CBD005E23E8 /* GSSetupBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupBackground.swift; sourceTree = "<group>"; };
@@ -129,6 +145,19 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		E7F2B3262AC49C040000E8F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7F2B3292AC49FAE0000E8F0 /* HomeView.swift */,
+				E7F2B32B2AC4A26F0000E8F0 /* RankingView.swift */,
+				E7F2B32D2AC4A27E0000E8F0 /* FavoritesView.swift */,
+				E7F2B32F2AC4A28D0000E8F0 /* AvatarsView.swift */,
+				E7F2B3312AC4A2980000E8F0 /* SettingsView.swift */,
+				E7F2B3372AC4ECA00000E8F0 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F92FFE392AC3243800F73E77 /* SimonAI */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +180,17 @@
 			isa = PBXGroup;
 			children = (
 				F9C3EB6E2AC4BE7A00829513 /* ScoreShower.swift */,
+				F9C3EB732AC5D0AD00829513 /* StartButtonShower.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		F9C3EB702AC59A6C00829513 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F9C3EB712AC59A7600829513 /* Vibration.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		F9D959BB2AC204F0005E23E8 = {
@@ -177,17 +215,17 @@
 				F92FFE462AC4B00200F73E77 /* Info.plist */,
 				1CFD95882AC3FECD00D62912 /* Managers */,
 				1CFB70CF2AC22163005AE041 /* xiloSounds */,
-				F9D959C72AC204F0005E23E8 /* AppDelegate.swift */,
+				F9C3EB702AC59A6C00829513 /* Utility */,
 				F92FFE472AC4B3C400F73E77 /* Fonts */,
+				E7F2B3332AC4AA640000E8F0 /* mugen.swift */,
 				F9D959C92AC204F0005E23E8 /* GameScene.sks */,
 				F9D959DE2AC206E0005E23E8 /* GameSceneExtensions */,
 				F9D959CF2AC204F0005E23E8 /* GameViewController.swift */,
 				F9C3EB6D2AC4BE6A00829513 /* Classes */,
 				F92FFE392AC3243800F73E77 /* SimonAI */,
+				E7F2B3262AC49C040000E8F0 /* View */,
 				F9D959E12AC20761005E23E8 /* Data */,
-				F9D959D12AC204F0005E23E8 /* Main.storyboard */,
 				F9D959D42AC204F1005E23E8 /* Assets.xcassets */,
-				F9D959D62AC204F1005E23E8 /* LaunchScreen.storyboard */,
 				1C68F1302AC5ED4C00681DB7 /* InstructionView.swift */,
 				1C68F1322AC5ED7000681DB7 /* GuideView.swift */,
 				1C68F1342AC5ED7C00681DB7 /* EndView.swift */,
@@ -204,7 +242,6 @@
 				F92FFE422AC3B7D700F73E77 /* GSKeysAnimations.swift */,
 				1CFB70CB2AC214BD005AE041 /* GSTouchesBegan.swift */,
 				F9D959EC2AC21CC0005E23E8 /* GSPlayNode.swift */,
-				F92FFE442AC45D3400F73E77 /* PauseAndPlaySimonAI.swift */,
 			);
 			path = GameSceneExtensions;
 			sourceTree = "<group>";
@@ -212,8 +249,10 @@
 		F9D959E12AC20761005E23E8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E7F2B3352AC4BFE40000E8F0 /* MusicCardModel.swift */,
 				F9D959E22AC207A0005E23E8 /* XiloKeys.swift */,
 				F92FFE362AC3134900F73E77 /* MockedSongs.swift */,
+				E7F2B3202AC3BDCA0000E8F0 /* LibraryOfSongs.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -227,6 +266,7 @@
 				F9D959E82AC21836005E23E8 /* GSSetupRepeatButton.swift */,
 				1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */,
 				F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */,
+				F9C3EB752AC5D30900829513 /* GSSetupStart.swift */,
 			);
 			path = Setups;
 			sourceTree = "<group>";
@@ -292,13 +332,11 @@
 				1CFB70E12AC22334005AE041 /* sweep.wav in Resources */,
 				1CFB70DF2AC22334005AE041 /* c.wav in Resources */,
 				1CFB70DA2AC22334005AE041 /* e1.wav in Resources */,
-				F9D959D32AC204F0005E23E8 /* Main.storyboard in Resources */,
 				F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */,
 				1CFB70DD2AC22334005AE041 /* g.wav in Resources */,
 				1CFB70D92AC22334005AE041 /* b.wav in Resources */,
 				F9D959D52AC204F1005E23E8 /* Assets.xcassets in Resources */,
 				1CFB70DB2AC22334005AE041 /* a.wav in Resources */,
-				F9D959D82AC204F1005E23E8 /* LaunchScreen.storyboard in Resources */,
 				1CFB70DC2AC22334005AE041 /* c2.wav in Resources */,
 				1CFB70DE2AC22334005AE041 /* f.wav in Resources */,
 				1CFB70E02AC22334005AE041 /* d1.wav in Resources */,
@@ -314,8 +352,10 @@
 			files = (
 				1C68F12F2AC4A02000681DB7 /* GSSetupProgressBar.swift in Sources */,
 				F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */,
-				F92FFE452AC45D3400F73E77 /* PauseAndPlaySimonAI.swift in Sources */,
+				E7F2B3322AC4A2980000E8F0 /* SettingsView.swift in Sources */,
+				E7F2B3212AC3BDCA0000E8F0 /* LibraryOfSongs.swift in Sources */,
 				F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */,
+				E7F2B3342AC4AA640000E8F0 /* mugen.swift in Sources */,
 				1CFB70CC2AC214BD005AE041 /* GSTouchesBegan.swift in Sources */,
 				1C68F1312AC5ED4C00681DB7 /* InstructionView.swift in Sources */,
 				1CFD95852AC3655000D62912 /* AudioManager.swift in Sources */,
@@ -327,40 +367,31 @@
 				F9D959E32AC207A0005E23E8 /* XiloKeys.swift in Sources */,
 				F9D959ED2AC21CC0005E23E8 /* GSPlayNode.swift in Sources */,
 				F9C3EB6F2AC4BE7A00829513 /* ScoreShower.swift in Sources */,
+				E7F2B32E2AC4A27E0000E8F0 /* FavoritesView.swift in Sources */,
 				F9D959E72AC20CE5005E23E8 /* GSSetupKeys.swift in Sources */,
+				E7F2B3382AC4ECA00000E8F0 /* CardView.swift in Sources */,
 				F9D959E02AC206F5005E23E8 /* GSUpdate.swift in Sources */,
 				F9C3EB6C2AC4BE2800829513 /* GSSetupScoreLabel.swift in Sources */,
 				F92FFE3F2AC3459E00F73E77 /* InputValidation.swift in Sources */,
+				E7F2B3302AC4A28D0000E8F0 /* AvatarsView.swift in Sources */,
 				E7F2B2E82AC2FB1F0000E8F0 /* NotesReference.swift in Sources */,
-				F9D959C82AC204F0005E23E8 /* AppDelegate.swift in Sources */,
 				F9D959E92AC21836005E23E8 /* GSSetupRepeatButton.swift in Sources */,
 				1C68F1352AC5ED7C00681DB7 /* EndView.swift in Sources */,
 				F92FFE432AC3B7D700F73E77 /* GSKeysAnimations.swift in Sources */,
 				F9D959E92AC21836005E23E8 /* GSSetupRepeatButton.swift in Sources */,
+				F9C3EB742AC5D0AD00829513 /* StartButtonShower.swift in Sources */,
+				F92FFE432AC3B7D700F73E77 /* GSKeysAnimations.swift in Sources */,
 				F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */,
+				F9C3EB722AC59A7600829513 /* Vibration.swift in Sources */,
+				F9C3EB762AC5D30900829513 /* GSSetupStart.swift in Sources */,
+				E7F2B3362AC4BFE40000E8F0 /* MusicCardModel.swift in Sources */,
+				E7F2B32C2AC4A26F0000E8F0 /* RankingView.swift in Sources */,
+				F92FFE372AC3134900F73E77 /* MockedSongs.swift in Sources */,
+				E7F2B32A2AC49FAE0000E8F0 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F9D959D12AC204F0005E23E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9D959D22AC204F0005E23E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F9D959D62AC204F1005E23E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9D959D72AC204F1005E23E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F9D959D92AC204F1005E23E8 /* Debug */ = {
@@ -488,8 +519,8 @@
 				DEVELOPMENT_TEAM = 2V5RBDFH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XiloLearn/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "Launch screen interface file base name";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -518,8 +549,8 @@
 				DEVELOPMENT_TEAM = 2V5RBDFH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XiloLearn/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "Launch screen interface file base name";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

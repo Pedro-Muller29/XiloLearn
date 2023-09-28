@@ -22,7 +22,14 @@ extension GameScene {
                     print("self ja foi desinicializada")
                     return
                 }
-                self.playNode(xilophoneKeyNode: self.xiloKeysToNode[xiloKey] ?? SKShapeNode())
+                if xiloKey == .FINISHCURRENTSEQUENCE {
+                    self.listeningToSimon = false
+                } else if xiloKey == .STARTCURRENTSEQUENCE {
+                    self.listeningToSimon = true
+                } else {
+                    self.playNode(self.xiloKeysToNode[xiloKey] ?? SKShapeNode())
+                }
             })
+        self.listeningToSimon = true
     }
 }
