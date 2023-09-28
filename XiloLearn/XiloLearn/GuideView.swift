@@ -28,6 +28,7 @@ struct GuideView: View {
                 Text(type.rawValue)
                     .font(.system(size: 50))
                     .bold()
+                    .foregroundColor(.black)
             }
             .frame(maxWidth: 547, maxHeight: 100)
             .cornerRadius(20)

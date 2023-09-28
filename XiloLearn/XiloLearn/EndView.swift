@@ -34,11 +34,14 @@ struct EndView: View {
                     
                     Text(type.getTitle())
                         .font(.system(size: 50))
+                        .foregroundColor(.black)
                         .bold()
                     Text("\(score)")
                         .font(.system(size: 50))
+                        .foregroundColor(.black)
                     Text("Score")
                         .font(.system(size: 30))
+                        .foregroundColor(.black)
                     
                     HStack {
                         Button {

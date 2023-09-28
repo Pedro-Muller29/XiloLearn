@@ -29,7 +29,7 @@ extension GameScene {
         // SKShapeNode que vai ficar na mesma posição da progressBarContainer, serve só pra fazer outro stroke
         let secondStroke = SKShapeNode(rectOf: CGSize(
             width: regraDe3ParaLargura(375) - 16,
-            height: regraDe3ParaAltura(20) - 16),
+            height: regraDe3ParaAltura(32) - 16),
             cornerRadius: 16 - 8)
         secondStroke.strokeColor = UIColor.gray
         secondStroke.fillColor = UIColor.clear
@@ -42,8 +42,8 @@ extension GameScene {
         // SKSPriteNodes das estrelas que vão ficar ao longo da progressBarContainer
         
         // Primeira estrela
-        let star1 = SKSpriteNode(texture: SKTexture(imageNamed: "Star1"))
-        star1.size = CGSize(width: 50, height: 50)
+        let star1 = SKSpriteNode(texture: SKTexture(imageNamed: "Star3"))
+        star1.size = CGSize(width: 40, height: 40)
         star1.position = CGPoint(x: 0, y: 0)
         star1.zRotation = CGFloat(165 * (CGFloat.pi / 180))
         star1.color = UIColor.systemYellow
@@ -51,8 +51,8 @@ extension GameScene {
         progressBarContainer.addChild(star1)
         
         // Segunda estrela
-        let star2 = SKSpriteNode(texture: SKTexture(imageNamed: "Star1"))
-        star2.size = CGSize(width: 50, height: 50)
+        let star2 = SKSpriteNode(texture: SKTexture(imageNamed: "Star3"))
+        star2.size = CGSize(width: 40, height: 40)
         star2.position = CGPoint(x: regraDe3ParaLargura(180) / 2, y: 0)
         star2.zRotation = CGFloat(165 * (CGFloat.pi / 180))
         star2.color = UIColor.systemYellow
@@ -60,7 +60,7 @@ extension GameScene {
         progressBarContainer.addChild(star2)
         
         // Terceira estrela
-        let star3 = SKSpriteNode(texture: SKTexture(imageNamed: "Star1"))
+        let star3 = SKSpriteNode(texture: SKTexture(imageNamed: "Star3"))
         star3.size = CGSize(width: 50, height: 50)
         star3.position = CGPoint(x: regraDe3ParaLargura(180), y: 0)
         star3.zRotation = CGFloat(165 * (CGFloat.pi / 180))
@@ -94,6 +94,9 @@ extension GameScene {
          
             if self.progressBar?.size.width ?? 0.0 >= (regraDe3ParaLargura(375) / 2) - 20 - regraDe3ParaLargura(0) {
                 self.star1 = true
+                if let star = self.progressBarContainer?.childNode(withName: "star1") as? SKSpriteNode {
+                    star.texture = SKTexture(imageNamed: "StarFill3")
+                }
             }
             
             if self.progressBar?.size.width ?? 0.0 >= ((regraDe3ParaLargura(375) / 2) + (regraDe3ParaLargura(375) / 4)) - 20 - regraDe3ParaLargura(0) {

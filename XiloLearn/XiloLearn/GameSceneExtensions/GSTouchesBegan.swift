@@ -10,6 +10,9 @@ import SpriteKit
 
 extension GameScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let star = self.progressBarContainer?.childNode(withName: "star1") as? SKSpriteNode {
+            star.texture = SKTexture(imageNamed: "StarFill3")
+        }
         for touch in touches {
             // Checa se alguma das notas foi tocada e toca o som da nota.
             if !listeningToSimon {

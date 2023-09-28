@@ -76,17 +76,3 @@ extension GameScene {
         ]))
     }
 }
-
-
-//do {
-//    try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
-//    print("AVAudioSession Category Playback OK")
-//    do {
-//        try AVAudioSession.sharedInstance().setActive(true)
-//        print("AVAudioSession is Active")
-//    } catch {
-//        print(error.localizedDescription)
-//    }
-//} catch {
-//    print("Error while setting AVAudioSession.Category to playback: \(error.localizedDescription)")
-//}

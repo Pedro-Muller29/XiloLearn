@@ -53,10 +53,12 @@ struct InstructionView: View {
                     .font(.system(size: 50))
                     .bold()
                     .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
                     .lineLimit(1)
                 Text(type.getBody())
                     .font(.system(size: 30))
                     .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
                     .lineLimit(2)
                 Button {
                     
