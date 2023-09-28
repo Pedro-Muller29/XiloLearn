@@ -15,13 +15,13 @@ extension GameScene {
         case makeKeyGoOutDown
         case makeKeySetForGame
         
-        fileprivate func animate(_ key: XiloKeys, withDuration time: TimeInterval, startingWait: TimeInterval, scene: GameScene) {
+        fileprivate func animate(_ key: XiloKeys, withDuration time: TimeInterval, startingWait: TimeInterval, scene: GameScene, completion: @escaping () -> Void) {
             switch self {
             case .makeKeyGoOutDown:
                 if let node = scene.xiloKeysToNode[key] {
                     node.run(SKAction.sequence([
                         .wait(forDuration: startingWait),
-                        .moveTo(y: scene.frame.minY - scene.regraDe3ParaAltura(596/2), duration: time)
+                        .moveTo(y: scene.frame.minY - scene.regraDe3ParaAltura(596/2), duration: time),
                     ]))
                 }
                 
@@ -36,14 +36,17 @@ extension GameScene {
         }
     }
     
-    func animateXiloKeys(withDuration time: TimeInterval, with animation: XiloKeyAnimation) {
+    func animateXiloKeys(withDuration time: TimeInterval, with animation: XiloKeyAnimation, completion: @escaping () -> Void) {
         var currentWait: Double = 0
         let increaseAmount: Double = time/16
         for note in XiloKeys.allCases {
             if xiloKeysToNode[note] != nil {
-                animation.animate(note, withDuration: time/2, startingWait: currentWait, scene: self)
+                animation.animate(note, withDuration: time/2, startingWait: currentWait, scene: self, completion: completion)
                 currentWait += increaseAmount
             }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + time) {
+            completion()
         }
     }
 }

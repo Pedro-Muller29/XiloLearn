@@ -17,6 +17,22 @@ extension GameScene {
                     continue
                 }
             }
+            
+            if let startButton = startButton {
+                if startButton.background.contains(touch.location(in: self)) {
+                    self.animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown, completion: {
+                        self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
+                            self.setupSimonAI(with: MockedSongs.ABCSong)
+                            print("setou")
+                        }
+                    })
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                        startButton.vanish()
+                        #warning("Aqui da pra avisar o SwiftUI que o cara comecou")
+                    })
+                    
+                }
+            }
         }
     }
     
