@@ -27,7 +27,8 @@ struct CardViewV2: View {
                     .cornerRadius(getProportionalValueWidth(10), corners: [.bottomLeft, .topLeft])
             } else {
                 Rectangle()
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(uiColor: UIColor.systemPurple))
+                    .opacity(0.5)
                     .frame(width: getProportionalValueWidth(69), height: getProportionalValueHeight(98))
                     .cornerRadius(getProportionalValueWidth(10), corners: [.bottomLeft, .topLeft])
             }

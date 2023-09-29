@@ -71,46 +71,24 @@ extension MusicCardModel {
                        song: LibraryOfSongs.bohemianRhapsody
                       ),
         
-        MusicCardModel(title: "Musica C",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "country",
-                       favoriteToggles: true
-                      ),
-        
-        MusicCardModel(title: "Musica D",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
+        MusicCardModel(title: "London Bridge Is Falling Down",
+                       artist: "Popular Song",
+                       durantion: 0.43,
                        categorie: "classical",
-                       favoriteToggles: true
+                       favoriteToggles: true,
+                       imageName: "LondonBridge",
+                       song: LibraryOfSongs.londonBridgeIsFallingDown
                       ),
         
-        MusicCardModel(title: "Musica E",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
+        MusicCardModel(title: "Mary had a Little Lamb",
+                       artist: "Sarah Josepha Hale",
+                       durantion: 0.27,
                        categorie: "classical",
-                       favoriteToggles: true
+                       favoriteToggles: true,
+                       imageName: "MaryhadALittleLamb",
+                       song: LibraryOfSongs.MaryHadALittleLamb
                       ),
         
-        MusicCardModel(title: "Musica F",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "classical",
-                       favoriteToggles: true
-                      ),
         
-        MusicCardModel(title: "Musica G",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "pop",
-                       favoriteToggles: true
-                      ),
-        
-        MusicCardModel(title: "Musica H",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "country",
-                       favoriteToggles: true
-                      ),
-    ]
+            ]
 }
