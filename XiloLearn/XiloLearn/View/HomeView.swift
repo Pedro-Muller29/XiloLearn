@@ -34,19 +34,6 @@ struct OutlinedButton: ViewModifier {
     }
 }
 
-//struct OutlineButton: ButtonStyle {
-//    func makeBody(configuration: Configuration) -> some View {
-//        configuration
-//            .label
-//            .foregroundColor(configuration.isPressed ? .white : (Color(red: 0.69, green: 0.32, blue: 0.87)))
-//            .padding()
-//            .font(.callout)
-//            .frame(width: 117, height: 35)
-//            .background(configuration.isPressed ? (Color(red: 0.69, green: 0.32, blue: 0.87)) : .white )
-//            .cornerRadius(10)
-//        }
-//}
-
 enum AllScreens: CaseIterable, Identifiable {   // << type !!
     var id: Self { self }
     
@@ -176,7 +163,6 @@ struct HomeView: View {
                             Text("Score")
                                 .fontWeight(.light)
                               
-                            
                             Divider()
 
                             // mocado, ainda centralizar esses conteudos
@@ -195,6 +181,7 @@ struct HomeView: View {
                         .frame(minWidth: proxy.size.width * 0.2, maxWidth: .infinity,  minHeight: proxy.size.height, maxHeight: proxy.size.height)
                         .background(Color.white)
                         .cornerRadius(30, corners: .topLeft) // deixando o canto com a impressaozinha
+                        
                     }
                     .ignoresSafeArea(.container, edges: [.top, .trailing])
                     .padding(.horizontal)
