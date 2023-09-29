@@ -60,9 +60,11 @@ extension GameScene {
                 self.animateXiloKeys(withDuration: 1, with: .makeKeyGoOutDown, completion: {
                     self.gotOutOfMenu = true
                 })
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+                    self.icon?.removeFromParent()
+                })
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                     startButton.vanish()
-                    #warning("Aqui da pra avisar o SwiftUI que o cara comecou")
                 })
                 
             }
