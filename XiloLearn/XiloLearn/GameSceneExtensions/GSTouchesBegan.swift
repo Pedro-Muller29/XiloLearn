@@ -16,41 +16,10 @@ extension GameScene {
             if !listeningToSimon {
                 if evaluateTouchesInXiloKeys(touch: touch) {
                     if let simonAI = simonAI {
-                        updateProgress(totalSequencesInSong: min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1))
-                        
-                        if (min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1) * (regraDe3ParaLargura(self.progressBarContainer?.frame.width ?? 0)))
-                            >=
-                            (regraDe3ParaLargura((375) / 2)) {
-                            
-                            if let star = self.progressBarContainer?.childNode(withName: "star1") as? SKSpriteNode {
-                                self.star1 = true
-                                star.texture = SKTexture(imageNamed: "StarFill3")
-                            }
-                        }
-                        
-                        
-                        if (min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1) * regraDe3ParaLargura(self.progressBarContainer?.frame.width ?? 0))
-                            >=
-                            ((regraDe3ParaLargura((self.progressBarContainer?.frame.width ?? 0) / 2)) + (regraDe3ParaLargura(self.progressBarContainer?.frame.width ?? 0) / 4)) {
-                            
-                            if let star = self.progressBarContainer?.childNode(withName: "star2") as? SKSpriteNode {
-                                self.star2 = true
-                                star.texture = SKTexture(imageNamed: "StarFill3")
-                            }
-                        }
-                        
-                        
-                        if (min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1) * regraDe3ParaLargura(self.progressBarContainer?.frame.width ?? 0))
-                            ==
-                            regraDe3ParaLargura(self.progressBarContainer?.frame.width ?? 0) {
-                            
-                            if let star = self.progressBarContainer?.childNode(withName: "star3") as? SKSpriteNode {
-                                self.star3 = true
-                                star.texture = SKTexture(imageNamed: "StarFill3")
-                            }
-                        }
-                        
-                        
+                        // avançar a progressBar
+                        updateProgress(percentageOfSongCompleted: min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1))
+                        // preencher as estrelas
+                        fillProgressBarStars(simonAI: simonAI)
                     }
                     continue
                 }
