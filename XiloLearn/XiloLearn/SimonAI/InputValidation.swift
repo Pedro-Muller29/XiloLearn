@@ -27,6 +27,11 @@ extension SimonAI {
             let currentKey = combinationToPlay[currentIndex]
             currentIndex += 1
             if currentKey != .BREAK {
+                if self.combinationToPlay.count - currentIndex > 1 {
+                    if combinationToPlay[currentIndex] == .BREAK {
+                        currentIndex += 1
+                    }
+                }
                 return currentKey
             }
         }
