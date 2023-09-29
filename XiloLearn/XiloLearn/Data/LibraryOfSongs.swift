@@ -58,8 +58,46 @@ class LibraryOfSongs {
      .E1, .G, .D1, .E1, .G, .E1, .B, .A
     ]
     
-   
-
+    static var badRomance: [XiloKeys] =
+    [.A, .A, .A, .A, .A, .A, .A,
+     .G, .G, .G, .D1, .D1, .E1,
+     .BREAK,
+     .E1, .E1, .E1,
+     .G, .D1, .D1, .C,
+     .BREAK,
+     .C, .D1, .E1, .C, .F, .E1, .F,
+     .E1, .D1, .D1, .C, .C, .D1, .E1, .E1, .E1,
+     .D1, .C,
+    ]
+    
+    static var belaCiao: [XiloKeys] =
+    [.E1, .A, .B, .C2, .A,
+     .BREAK,
+     .E1, .A, .B, .C2, .A,
+     .BREAK,
+     .E1, .A, .B, .C2,
+     .B, .A, .C2, .A, .B,
+     .E1, .E1, .E1,
+     .BREAK,
+     .E1, .D1, .E1, .F,
+     .D1,
+     .BREAK,
+     .F, .E1, .D1, .F, .E1,
+     .BREAK,
+     .D1, .C, .B, .E1, .B, .C2, .A
+    ]
+    
+    static var livingOnAPrayer: [XiloKeys] =
+    [.C2, .BREAK, .C2, .C2, .B, .A, .G,
+     .BREAK,
+     .E1, .F,
+     .BREAK,
+     .F, .F, .E1, .C, .C, .D1,
+     .BREAK,
+     .C, .C, .D1, .C, .C2, .C2, .B, .A, .G,
+     .BREAK,
+     .E1, .F, .BREAK, .F, .F, .E1, .C, .C, .D1
+    ]
     
     ///Bohemian Rhapsody" by Queen:
     static var bohemianRhapsody: [XiloKeys] =

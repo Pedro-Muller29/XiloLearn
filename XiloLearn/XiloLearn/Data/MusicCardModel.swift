@@ -42,67 +42,55 @@ struct MusicCardModel: Hashable {
 extension MusicCardModel {
     
     static let sampleData: [MusicCardModel] = [  //   static let sampleData: [DailyScrum] =
-        MusicCardModel(title: "Love ",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
+        MusicCardModel(title: "Anunciação",
+                       artist: "Alceu Valença",
+                       durantion: 0.34,
                        categorie: "pop",
                        favoriteToggles: false
                       ),
         
-        MusicCardModel(title: "ROBOTS",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
+        MusicCardModel(title: "Força Estranha",
+                       artist: "Gal Costa",
+                       durantion: 0.48,
                        categorie: "pop",
                        favoriteToggles: false
                       ),
         
-        MusicCardModel(title: "Musica B",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
+        MusicCardModel(title: "Não quero dinheiro",
+                       artist: "Tim Maia",
+                       durantion: 0.45,
+                       categorie: "pop",
+                       favoriteToggles: false
+                      ),
+        
+        MusicCardModel(title: "Bad Romance",
+                       artist: "Lady Gaga",
+                       durantion: 1.15,
+                       categorie: "pop",
+                       favoriteToggles: true
+                      ),
+        
+        MusicCardModel(title: "Bella Ciao",
+                       artist: "Fonola Band",
+                       durantion: 0.45,
+                       categorie: "classical",
+                       favoriteToggles: true
+                      ),
+        
+        MusicCardModel(title: "Living'On A Prayer",
+                       artist: "Bon Jovi",
+                       durantion: 0.38,
                        categorie: "rock",
-                       favoriteToggles: false
-                      ),
-        
-        MusicCardModel(title: "Musica C",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "country",
                        favoriteToggles: true
                       ),
         
-        MusicCardModel(title: "Musica D",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "classical",
+        MusicCardModel(title: "Under Pressure",
+                       artist: "Queen, David Bowie",
+                       durantion: 0.44,
+                       categorie: "rock",
                        favoriteToggles: true
                       ),
         
-        MusicCardModel(title: "Musica E",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "classical",
-                       favoriteToggles: true
-                      ),
-        
-        MusicCardModel(title: "Musica F",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "classical",
-                       favoriteToggles: true
-                      ),
-        
-        MusicCardModel(title: "Musica G",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "pop",
-                       favoriteToggles: true
-                      ),
-        
-        MusicCardModel(title: "Musica H",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
-                       categorie: "country",
-                       favoriteToggles: true
-                      ),
+       
     ]
 }
