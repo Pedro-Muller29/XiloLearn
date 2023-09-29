@@ -10,15 +10,16 @@ import SpriteKit
 
 extension GameScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let star = self.progressBarContainer?.childNode(withName: "star1") as? SKSpriteNode {
-            star.texture = SKTexture(imageNamed: "StarFill3")
-        }
+        
         for touch in touches {
             // Checa se alguma das notas foi tocada e toca o som da nota.
             if !listeningToSimon {
                 if evaluateTouchesInXiloKeys(touch: touch) {
                     if let simonAI = simonAI {
-                        updateProgress(totalSequencesInSong: min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1))
+                        // avançar a progressBar
+                        updateProgress(percentageOfSongCompleted: min(CGFloat(simonAI.increasePerCycle * simonAI.currentLevel + 1)/CGFloat(simonAI.combinationToPlay.count), 1))
+                        // preencher as estrelas
+                        fillProgressBarStars(simonAI: simonAI)
                     }
                     continue
                 }
