@@ -44,6 +44,7 @@
 		F9C3EB742AC5D0AD00829513 /* StartButtonShower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB732AC5D0AD00829513 /* StartButtonShower.swift */; };
 		F9C3EB762AC5D30900829513 /* GSSetupStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB752AC5D30900829513 /* GSSetupStart.swift */; };
 		F9C3EB782AC6240F00829513 /* GSSetupGameIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB772AC6240F00829513 /* GSSetupGameIcon.swift */; };
+		F9C3EB7C2AC6534500829513 /* CardViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C3EB7B2AC6534500829513 /* CardViewV2.swift */; };
 		F9D959CA2AC204F0005E23E8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9D959C92AC204F0005E23E8 /* GameScene.sks */; };
 		F9D959CE2AC204F0005E23E8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CD2AC204F0005E23E8 /* GameScene.swift */; };
 		F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D959CF2AC204F0005E23E8 /* GameViewController.swift */; };
@@ -97,6 +98,7 @@
 		F9C3EB732AC5D0AD00829513 /* StartButtonShower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonShower.swift; sourceTree = "<group>"; };
 		F9C3EB752AC5D30900829513 /* GSSetupStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupStart.swift; sourceTree = "<group>"; };
 		F9C3EB772AC6240F00829513 /* GSSetupGameIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupGameIcon.swift; sourceTree = "<group>"; };
+		F9C3EB7B2AC6534500829513 /* CardViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewV2.swift; sourceTree = "<group>"; };
 		F9D959C42AC204F0005E23E8 /* XiloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D959C92AC204F0005E23E8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F9D959CD2AC204F0005E23E8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				E7F2B32F2AC4A28D0000E8F0 /* AvatarsView.swift */,
 				E7F2B3312AC4A2980000E8F0 /* SettingsView.swift */,
 				E7F2B3372AC4ECA00000E8F0 /* CardView.swift */,
+				F9C3EB7B2AC6534500829513 /* CardViewV2.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C3EB7C2AC6534500829513 /* CardViewV2.swift in Sources */,
 				1C68F12F2AC4A02000681DB7 /* GSSetupProgressBar.swift in Sources */,
 				F92FFE3B2AC3246E00F73E77 /* SimonAI.swift in Sources */,
 				F9C3EB782AC6240F00829513 /* GSSetupGameIcon.swift in Sources */,

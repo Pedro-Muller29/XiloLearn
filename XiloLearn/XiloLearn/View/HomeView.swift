@@ -117,23 +117,23 @@ struct HomeView: View {
                                         
                                         
                                         // display the cards by the selected categorie
-                                        // TODO: on pressed calls the gameScene class with the specified music
                                         ScrollView {
                                             LazyVGrid(columns: layout) {
                                                 ForEach($items, id: \.self) { card in
                                                     
                                                     Group {
                                                         if selected == "All" {
-                                                            CardView(card: card)
+                                                            CardViewV2(realHeight: 98 * proxy.size.height/390, realWidth: 203 * proxy.size.width/844, card: card)
                                                             
                                                         } else if selected.compare(card.wrappedValue.categorie, options: .caseInsensitive) == .orderedSame {
                                                             // a is equals to A
-                                                            CardView(card: card)
-                                                            
+                                                            CardViewV2(realHeight: 98 * proxy.size.height/390, realWidth: 203 * proxy.size.width/844, card: card)
                                                         }
                                                     }
                                                     .onTapGesture {
-                                                        scene.setupSong(with: LibraryOfSongs.anunciacao)
+                                                        
+                                                        scene.setupSong(with: card.wrappedValue.song ?? LibraryOfSongs.anunciacao)
+                                                        
                                                     }
                                                 }
                                             }

@@ -83,9 +83,9 @@ class GameScene: SKScene, ObservableObject {
     
     func setupSong(with song: [XiloKeys]) {
         self.removeAllChildren()
-        print("tamanho: ", self.children.count)
         isPlaying = true
         isMenu = false
+        self.song = song
 //        setupBackground()
 //        setupKeys()
 //        setupScore()

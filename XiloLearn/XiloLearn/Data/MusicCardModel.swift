@@ -37,30 +37,38 @@ struct MusicCardModel: Hashable {
     var durantion: Float
     var categorie: String
     var favoriteToggles: Bool
+    var imageName: String?
+    var song: [XiloKeys]?
 }
 
 extension MusicCardModel {
     
     static let sampleData: [MusicCardModel] = [  //   static let sampleData: [DailyScrum] =
-        MusicCardModel(title: "Love ",
-                       artist: "olivia rodrigo",
-                       durantion: 2.34,
+        MusicCardModel(title: "Anunciação",
+                       artist: "Alceu Valença",
+                       durantion: 3.39,
                        categorie: "pop",
-                       favoriteToggles: false
+                       favoriteToggles: false,
+                       imageName: "Alceu-Valenca",
+                       song: LibraryOfSongs.anunciacao
                       ),
         
-        MusicCardModel(title: "ROBOTS",
-                       artist: "olivia rodrigo",
+        MusicCardModel(title: "Não Quero Dinheiro",
+                       artist: "Tim Maia",
                        durantion: 2.34,
                        categorie: "pop",
-                       favoriteToggles: false
+                       favoriteToggles: false,
+                       imageName: "NaoQueroDinheiro",
+                       song: LibraryOfSongs.naoQueroDinheiro
                       ),
         
-        MusicCardModel(title: "Musica B",
-                       artist: "olivia rodrigo",
+        MusicCardModel(title: "Bohemian Rhapsody",
+                       artist: "Queen",
                        durantion: 2.34,
                        categorie: "rock",
-                       favoriteToggles: false
+                       favoriteToggles: false,
+                       imageName: "Queen",
+                       song: LibraryOfSongs.bohemianRhapsody
                       ),
         
         MusicCardModel(title: "Musica C",

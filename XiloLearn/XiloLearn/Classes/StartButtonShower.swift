@@ -33,7 +33,7 @@ class StartButtonShower {
         
         self.startLabel = SKLabelNode(attributedText: NSAttributedString(string: "Start", attributes: [.font: UIFont.boldSystemFont(ofSize: cornerRadius * 50/24), .foregroundColor: UIColor.black]))
         startLabel.zPosition = 4
-        startLabel.position = CGPoint(x: 0, y: -size.height/8)
+        startLabel.position = CGPoint(x: 0, y: -size.height/6)
         background.addChild(startLabel)
     }
     

@@ -13,6 +13,7 @@ struct Mugen_IVApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView(items: MusicCardModel.sampleData)
+                .preferredColorScheme(.light)
                 .onAppear {
                     do {
                         try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
