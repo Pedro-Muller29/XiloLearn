@@ -2,6 +2,14 @@ import Foundation
 import SwiftUI
 import SpriteKit
 
+// Conforme os ensinamentos de Andersonn Oretto, iremos usar o NotificationCenter para fazer algumas comunicações da view para a GameScene
+
+// Exemplo:
+// NotificationCenter.default.post(name: Notification.Name("isShowingInstructions"), object: nil)
+//.onReceive(NotificationCenter.default.publisher(for: Notification.Name("isGameRunning"))) {
+//    output in
+//}
+
 struct RoundedCorner: Shape {
     var radius: CGFloat = .infinity
     var corners: UIRectCorner = .allCorners
@@ -63,10 +71,14 @@ struct HomeView: View {
     @State var categories: [String] = ["All", "Rock", "Country", "Pop", "Classical"]
     @State var selected: String = "All"
     
-    @ObservedObject var scene: GameScene = {
-            let scene = GameScene(startingMenu: true, song: LibraryOfSongs.anunciacao, size: CGSize(width: 844, height: 390))
-            return scene
-        }()
+    @State var isShowingInstructions: Bool = false
+    @State var isShowingGuide: Bool = false
+    @State var isShowingEnd: Bool = false
+    
+    @StateObject var scene: GameScene = {
+        let scene = GameScene(startingMenu: true, song: LibraryOfSongs.anunciacao, size: CGSize(width: 844, height: 390))
+        return scene
+    }()
     
     @State var items: [MusicCardModel]
     
@@ -78,7 +90,12 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             if scene.isPlaying || !scene.gotOutOfMenu {
-                SpriteView(scene: scene)
+                ZStack {
+                    SpriteView(scene: scene)
+                    if isShowingInstructions {
+                        GuideView(type: .watch)
+                    }
+                }
                     .ignoresSafeArea()
             } else {
                 GeometryReader { proxy in
@@ -103,7 +120,7 @@ struct HomeView: View {
                                         
                                         // displays the categories
                                         HStack(){
-                                            ForEach(0..<categories.count ) { index in
+                                            ForEach(0..<categories.count, id: \.self) { index in
                                                 
                                                 Button(categories[index]) {
                                                     
@@ -133,7 +150,9 @@ struct HomeView: View {
                                                         }
                                                     }
                                                     .onTapGesture {
+
                                                         scene.setupSong(with: LibraryOfSongs.anunciacao)
+
                                                     }
                                                 }
                                             }
@@ -206,7 +225,11 @@ struct HomeView: View {
                     .padding(.trailing)
                 }
                 .ignoresSafeArea(.container)
+
             }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("isShowingInstructions"))) { output in
+            isShowingInstructions.toggle()
         }
     }
 }

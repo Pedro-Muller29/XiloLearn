@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4510BA2AD09E0F0010966C /* GSSetupExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4510B92AD09E0F0010966C /* GSSetupExitButton.swift */; };
 		1C68F12F2AC4A02000681DB7 /* GSSetupProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */; };
 		1C68F1312AC5ED4C00681DB7 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F1302AC5ED4C00681DB7 /* InstructionView.swift */; };
 		1C68F1332AC5ED7000681DB7 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68F1322AC5ED7000681DB7 /* GuideView.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4510B92AD09E0F0010966C /* GSSetupExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupExitButton.swift; sourceTree = "<group>"; };
 		1C68F12E2AC4A02000681DB7 /* GSSetupProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSetupProgressBar.swift; sourceTree = "<group>"; };
 		1C68F1302AC5ED4C00681DB7 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		1C68F1322AC5ED7000681DB7 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				F9C3EB6B2AC4BE2800829513 /* GSSetupScoreLabel.swift */,
 				F9C3EB752AC5D30900829513 /* GSSetupStart.swift */,
 				F9C3EB772AC6240F00829513 /* GSSetupGameIcon.swift */,
+				1C4510B92AD09E0F0010966C /* GSSetupExitButton.swift */,
 			);
 			path = Setups;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				1C68F1312AC5ED4C00681DB7 /* InstructionView.swift in Sources */,
 				1CFD95852AC3655000D62912 /* AudioManager.swift in Sources */,
 				F92FFE3D2AC328C300F73E77 /* GSSetupSimonAI.swift in Sources */,
+				1C4510BA2AD09E0F0010966C /* GSSetupExitButton.swift in Sources */,
 				F9D959E52AC20CBD005E23E8 /* GSSetupBackground.swift in Sources */,
 				1C68F1332AC5ED7000681DB7 /* GuideView.swift in Sources */,
 				F9D959D02AC204F0005E23E8 /* GameViewController.swift in Sources */,

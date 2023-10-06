@@ -36,6 +36,7 @@ struct GuideView: View {
         .ignoresSafeArea()
         .onTapGesture {
             dismiss()
+            NotificationCenter.default.post(name: Notification.Name("isShowingInstructions"), object: nil)
         }
     }
 }

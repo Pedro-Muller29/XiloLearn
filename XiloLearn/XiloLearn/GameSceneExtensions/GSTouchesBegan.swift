@@ -24,8 +24,8 @@ extension GameScene {
                     continue
                 }
             }
-            
             checkStartButtonTouched(touch: touch)
+            checkExitButtonTouched(touch: touch)
         }
     }
     
@@ -66,7 +66,16 @@ extension GameScene {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                     startButton.vanish()
                 })
-                
+            }
+        }
+    }
+    
+    private func checkExitButtonTouched(touch: UITouch) {
+        if let exitButton = exitButton {
+            if exitButton.contains(touch.location(in: self)) {
+                self.isPlaying.toggle()
+                self.removeAllActions()
+                self.removeAllChildren()
             }
         }
     }

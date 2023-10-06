@@ -17,6 +17,7 @@ class GameScene: SKScene, ObservableObject {
     var xiloKeysToNode: [XiloKeys: SKShapeNode] = [:]
     var nodeToXiloKeys: [SKShapeNode: XiloKeys] = [:]
     var repeatButton: SKSpriteNode? = SKSpriteNode()
+    var exitButton: SKSpriteNode? = SKSpriteNode()
     var progressBarContainer: SKShapeNode? = SKShapeNode()
     var progressBar: SKSpriteNode? = SKSpriteNode()
     var icon: SKSpriteNode?
@@ -38,10 +39,12 @@ class GameScene: SKScene, ObservableObject {
     // Haptics manager
     let hapticManager = HapticManager()
     
+    // Progress Bar control variables
     var progress: Int = 0
     var star1: Bool = false
     var star2: Bool = false
     var star3: Bool = false
+    
     // song
     var song: [XiloKeys]
     
@@ -73,6 +76,7 @@ class GameScene: SKScene, ObservableObject {
             setupKeys()
             setupScore()
             setupProgressBar()
+            setupExitButton()
             animateXiloKeys(withDuration: 0.01, with: .makeKeyGoOutDown, completion: {
                 self.animateXiloKeys(withDuration: 1, with: .makeKeySetForGame) {
                     self.setupSimonAI(with: self.song)
