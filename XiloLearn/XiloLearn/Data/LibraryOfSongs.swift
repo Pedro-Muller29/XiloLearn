@@ -44,27 +44,11 @@ class LibraryOfSongs {
      .BREAK,
      .F, .D1, .F, .G, .F]
     
-    static var forcaEstranha: [XiloKeys] =
-    [.B, .B, .A, .B, .C2, .B,
-     .BREAK,
-     .G, .B, .A, .B, .A,
-     .BREAK,
-     .G, .G, .F, .G, .A, .G, .G, .F,
-     .BREAK,
-     .E1, .E1, .D1, .E1, .G, .E1,
-     .BREAK,
-     .D1, .D1, .C, .D1, .E1,
-     .BREAK,
-     .E1, .G, .D1, .E1, .G, .E1, .B, .A
-    ]
-    
-   
-
     
     ///Bohemian Rhapsody" by Queen:
     static var bohemianRhapsody: [XiloKeys] =
     [.F, .F, .F, .F, .F,
-    .E1, .E1, .F, .E1, .D1, .C,
+     .E1, .E1, .F, .E1, .D1, .C,
      .F,
      .BREAK,
      .F, .F, .G, .F, .F,
@@ -90,7 +74,7 @@ class LibraryOfSongs {
      .G, .A, .G, .F, .E1, .F, .G,
      .BREAK,
      .D1, .G, .E1, .C
-     ]
+    ]
     
     static var MaryHadALittleLamb: [XiloKeys] =
     [
@@ -102,4 +86,62 @@ class LibraryOfSongs {
         .BREAK,
         .E1, .D1, .D1, .E1, .D1, .C
     ]
+    
+    static var badRomance: [XiloKeys] =
+    [.A, .A, .A, .A, .A, .A, .A,
+     .G, .G, .G, .D1, .D1, .E1,
+     .BREAK,
+     .E1, .E1, .E1,
+     .G, .D1, .D1, .C,
+     .BREAK,
+     .C, .D1, .E1, .C, .F, .E1, .F,
+     .E1, .D1, .D1, .C, .C, .D1, .E1, .E1, .E1,
+     .D1, .C,
+    ]
+    
+    static var belaCiao: [XiloKeys] =
+    [.E1, .A, .B, .C2, .A,
+     .BREAK,
+     .E1, .A, .B, .C2, .A,
+     .BREAK,
+     .E1, .A, .B, .C2,
+     .B, .A, .C2, .A, .B,
+     .E1, .E1, .E1,
+     .BREAK,
+     .E1, .D1, .E1, .F,
+     .D1,
+     .BREAK,
+     .F, .E1, .D1, .F, .E1,
+     .BREAK,
+     .D1, .C, .B, .E1, .B, .C2, .A
+    ]
+    
+    static var livingOnAPrayer: [XiloKeys] =
+    [.C2, .BREAK, .C2, .C2, .B, .A, .G,
+     .BREAK,
+     .E1, .F,
+     .BREAK,
+     .F, .F, .E1, .C, .C, .D1,
+     .BREAK,
+     .C, .C, .D1, .C, .C2, .C2, .B, .A, .G,
+     .BREAK,
+     .E1, .F, .BREAK, .F, .F, .E1, .C, .C, .D1
+    ]
+    
+    
+    
+    static var forcaEstranha: [XiloKeys] =
+    [.B, .B, .A, .B, .C2, .B,
+     .BREAK,
+     .G, .B, .A, .B, .A,
+     .BREAK,
+     .G, .G, .F, .G, .A, .G, .G, .F,
+     .BREAK,
+     .E1, .E1, .D1, .E1, .G, .E1,
+     .BREAK,
+     .D1, .D1, .C, .D1, .E1,
+     .BREAK,
+     .E1, .G, .D1, .E1, .G, .E1, .B, .A
+    ]
+    
 }

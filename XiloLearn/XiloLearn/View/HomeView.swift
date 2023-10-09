@@ -117,7 +117,7 @@ struct HomeView: View {
                                         
                                         
                                         // display the cards by the selected categorie
-                                        ScrollView {
+                                        ScrollView(showsIndicators: false) {
                                             LazyVGrid(columns: layout) {
                                                 ForEach($items, id: \.self) { card in
                                                     
@@ -137,6 +137,8 @@ struct HomeView: View {
                                                     }
                                                 }
                                             }
+                                            .padding(.bottom)
+                                            
                                         } // fim scrollView
                                     }
                                 }

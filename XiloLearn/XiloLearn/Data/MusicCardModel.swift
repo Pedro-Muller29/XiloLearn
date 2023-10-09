@@ -89,6 +89,41 @@ extension MusicCardModel {
                        song: LibraryOfSongs.MaryHadALittleLamb
                       ),
         
+        MusicCardModel(title: "Bad Romance",
+                             artist: "Lady Gaga",
+                             durantion: 1.59,
+                             categorie: "pop",
+                             favoriteToggles: false,
+                             imageName: "Gaga",
+                             song: LibraryOfSongs.badRomance
+                            ),
+              
+              
+              MusicCardModel(title: "Bella Ciao",
+                                   artist: "Fonola Band",
+                                   durantion: 0.45,
+                                   categorie: "classical",
+                                   favoriteToggles: true,
+                                   imageName: "Fanola",
+                                   song: LibraryOfSongs.belaCiao
+                                  ),
+              
+              MusicCardModel(title: "Living'On A Prayer",
+                                   artist: "Bon Jovi",
+                                   durantion: 0.38,
+                                   categorie: "rock",
+                                   favoriteToggles: true,
+                                   imageName: "BonJovi",
+                                   song: LibraryOfSongs.livingOnAPrayer
+                                  ),
+              
+              MusicCardModel(title: "Força Estranha",
+                                     artist: "Gal Costa",
+                                     durantion: 0.48,
+                                     categorie: "pop",
+                                     favoriteToggles: false,
+                                     imageName: "Gal",
+                                     song: LibraryOfSongs.forcaEstranha)
         
             ]
 }
