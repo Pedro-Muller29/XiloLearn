@@ -5,8 +5,8 @@ import SpriteKit
 // Conforme os ensinamentos de Andersonn Oretto, iremos usar o NotificationCenter para fazer algumas comunicações da view para a GameScene
 
 // Exemplo:
-// NotificationCenter.default.post(name: Notification.Name("isShowingInstructions"), object: nil)
-//.onReceive(NotificationCenter.default.publisher(for: Notification.Name("isGameRunning"))) {
+// NotificationCenter.default.post(name: Notification.Name("channel"), object: nil)
+//.onReceive(NotificationCenter.default.publisher(for: Notification.Name("channel"))) {
 //    output in
 //}
 
@@ -71,9 +71,8 @@ struct HomeView: View {
     @State var categories: [String] = ["All", "Rock", "Country", "Pop", "Classical"]
     @State var selected: String = "All"
     
-    @State var isShowingInstructions: Bool = false
-    @State var isShowingGuide: Bool = false
-    @State var isShowingEnd: Bool = false
+    // Variável que controlam qual view é mostrada por cima da GameScene
+    @State var displayedView: ViewTypes?
     
     @StateObject var scene: GameScene = {
         let scene = GameScene(startingMenu: true, song: LibraryOfSongs.anunciacao, size: CGSize(width: 844, height: 390))
@@ -92,9 +91,13 @@ struct HomeView: View {
             if scene.isPlaying || !scene.gotOutOfMenu {
                 ZStack {
                     SpriteView(scene: scene)
-                    if isShowingInstructions {
-                        GuideView(type: .watch)
-                    }
+                    
+                    // Colocar aqui as views que vão aparecer por cima da GameScene
+                    // Exemplo:
+//                    switch displayedView {
+//                        case .instructionWatch:
+//                            InstructionView(type: .watch)
+//                    }
                 }
                     .ignoresSafeArea()
             } else {
@@ -228,8 +231,10 @@ struct HomeView: View {
 
             }
         }
-        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("isShowingInstructions"))) { output in
-            isShowingInstructions.toggle()
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("channel"))) { output in
+
+            // execute actions based on output received
+            
         }
     }
 }

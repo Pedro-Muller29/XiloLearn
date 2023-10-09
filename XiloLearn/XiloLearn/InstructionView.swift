@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+enum ViewTypes {
+    case instructionWatch
+    case instructionPlay
+    
+    case guideWatch
+    case guideRepeat
+    case guideWatchAgain
+    
+    case endWon
+    case endLost
+}
+
 enum InstructionViewText: String {
     case watch, play
     
